@@ -18,6 +18,8 @@
   "homepage": "https://github.com/OscarKevinXR/aframe-demo#readme",
   "keywords": [],
   "dependencies": {
+    "aframe": "^1.3.0",
+    "angle": "^0.9.1",
     "five-server": "^0.1.4"
   }
 }
