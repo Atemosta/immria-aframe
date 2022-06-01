@@ -2,12 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello, World! - A-Frame</title>
+    <title>Immria (Novus)</title>
     <meta name="description" content="Hello, World! - A-Frame">
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type="text/javascript" language="javascript">
+      AFRAME.registerComponent('code-that-does-this', {
+        init: function () {
+          // Code here.
+          console.log('Welcome, class!');
+
+          // Set up request to retrieve names from API endpoint
+          var serverApiUrl = "https://pjrbfk87db.execute-api.us-east-1.amazonaws.com/dev/";
+          var apiGetNames = "items";
+          var namesUrl = serverApiUrl + apiGetNames;
+          var dict = {};
+
+          // Send Request and Parse JSON Response
+          var request = new XMLHttpRequest();
+          request.responseType = 'json';
+          request.open('GET', namesUrl, true);
+          request.onload  = function() {
+            var jsonResponse = request.response;
+
+
+            if (request.status >= 200 && request.status < 400) {
+              jsonResponse.forEach(name => {
+                var tokenId = name["tokenId"];
+                var addressName = name["addressName"]
+                dict[tokenId] = addressName;
+                console.log(dict[tokenId])
+              })
+            } else {
+              console.log('error')
+            }
+          };
+          request.send(null);          
+        }
+      });
+    
+      AFRAME.registerComponent('code-to-attach-to-box', {
+        init: function () {
+          // Code here.
+          console.log(this.el);
+        }
+      });
+    </script>
   </head>
   <body>
-    <a-scene>
+    <a-scene code-that-does-this>
       <!-- Assets  -->
       <a-assets>
         <img id="boxTexture" src="assets/stones.jpg">
