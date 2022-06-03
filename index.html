@@ -44,7 +44,7 @@
                   var textEl = document.createElement('a-entity');
                   var textPosX = (Math.floor(i/10)*2)-7.5;
                   var textPosY = 5 - (i%10)*0.3;
-                  var textPosZ = -10 + 0.25;
+                  var textPosZ = -10 + 0.126;
                   var textValue = 'Alice Kisaragi';
                   // var textValue = dict[i];
                   console.log(dict[i]);
@@ -84,7 +84,6 @@
       </a-entity>
       <a-plane id="floor" color="#505559" rotation="-90 0 0" width="50" height="50"></a-plane>
       <a-sky src="#skyTexture"></a-sky>
-</a-entity>
 
       <!-- hand controls -->
       <a-entity id="player" position="0 -0.2 4" >
@@ -95,10 +94,23 @@
           look-controls="pointerLockEnabled: true">
         </a-entity>
         <!-- hand controls -->
-        <a-entity id="left-hand" oculus-touch-controls="hand: left" blink-controls></a-entity>
-        <a-entity id="right-hand" oculus-touch-controls="hand: right" blink-controls></a-entity>
+        <a-entity id="left-hand" 
+          vive-controls="hand: left"
+          oculus-touch-controls="hand: left"
+          microsoft-motion-controls="hand: left"
+          daydream-controls="left" 
+          gearvr-controls="left"        
+          blink-controls>
+        </a-entity>
+        <a-entity id="right-hand" 
+          vive-controls="hand: right"
+          microsoft-motion-controls="hand: right"
+          oculus-touch-controls="hand: right"
+          daydream-controls="right" 
+          gearvr-controls="right"          
+          blink-controls>
+        </a-entity>
       </a-entity>
-
 
       <!-- Components -->
         <!-- Main Monument -->
