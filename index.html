@@ -37,7 +37,7 @@
                   var textPosZ = -10 + 0.126;
                   // var textValue = 'Alice Kisaragi';
                   var textValue = dict[i];
-                  console.log(dict[i]);
+                  // console.log(dict[i]); // DEBUG
                   textEl.setAttribute('geometry', {width: 'auto', height: 'auto'});
                   textEl.setAttribute('position', {x: textPosX, y: textPosY, z: textPosZ}); 
                   textEl.setAttribute('text', {width:'5', value: textValue, whiteSpace: 'nowrap'});
@@ -51,10 +51,12 @@
          }
       });
     
-      AFRAME.registerComponent('code-to-attach-to-box', {
+      AFRAME.registerComponent('click-handler', {
         init: function () {
-          // Code here.
-          console.log(this.el);
+          var el = this.el;        
+          el.addEventListener('click', function () {
+            window.open(`https://atos.to`, '_blank')
+          }); 
         }
       });
     </script>
@@ -65,6 +67,7 @@
       <a-assets>
         <img id="controlsQuest" src="assets/images/aframe-quest-controls-0.2.png">
         <img id="controlsPC" src="assets/images/aframe-pc-controls.png">
+        <img id="engravePoster" src="assets/images/engrave.png">
         <img id="skyTexture"
           src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
       </a-assets>    
@@ -81,8 +84,18 @@
         <a-entity id="camera" camera wasd-controls 
           camera="near: 0.001; far: 1000;" 
           position="0 1.7 0" 
-          look-controls="pointerLockEnabled: true">
+          look-controls="pointerLockEnabled: true"
+        >
+          <a-entity cursor="fuse: false"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: black; shader: flat">
+          </a-entity>
         </a-entity>
+        <!-- <a-camera>
+          <a-cursor></a-cursor>
+        </a-camera> -->
+
         <!-- hand controls -->
         <a-entity id="left-hand" 
           vive-controls="hand: left"
@@ -119,7 +132,7 @@
           >
           </a-box>
           <a-box 
-            color="#173852"
+            color="#173852"aframe-pc-controls
             position="-5 1.75 -10" 
             scale="1 1 .25" 
           >
@@ -147,26 +160,25 @@
         <!-- Instructions Box -->
         <a-box 
           src="#controlsQuest" 
-          color="#173852"
           position="-10 2.5 6.5" 
           scale="0 5 10" 
         >
         </a-box>
         <a-box 
         src="#controlsPC" 
-        color="#173852"
         position="-10 2.5 -1" 
         scale="0 5 5" 
         >
         </a-box>
 
         <!-- Store Box -->
-        <!-- <a-box 
-          color="#343737"
-          position="0 1.75 0" 
-          scale="1 1 .25" 
+        <a-box 
+          src="#engravePoster" 
+          position="10 2.5 5" 
+          scale="0 5 10" 
+          click-handler
         >
-        </a-box> -->
+        </a-box>
 
         <!-- Walls -->
         <a-box 
