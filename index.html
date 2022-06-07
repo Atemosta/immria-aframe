@@ -9,8 +9,6 @@
     <script type="text/javascript" language="javascript">
       AFRAME.registerComponent('monument-collection', {
         init: function () {
-          // Code here.
-          console.log('Welcome, class!');
 
           // Set up request to retrieve names from API endpoint
           var serverApiUrl = "https://pjrbfk87db.execute-api.us-east-1.amazonaws.com/dev/";
@@ -18,47 +16,38 @@
           var namesUrl = serverApiUrl + apiGetNames;
           var dict = {};
 
-          // // Send Request and Parse JSON Response
-          // var request = new XMLHttpRequest();
-          // request.responseType = 'json';
-          // request.open('GET', namesUrl, true);
-
-          // request.onload  = function() {
-          //   var jsonResponse = request.response;
-          //   // Error Checking Request
-          //   if (request.status >= 200 && request.status < 400) {
-          //     jsonResponse.forEach(name => {
-          //       var tokenId = name["tokenId"];
-          //       var addressName = name["addressName"]
-          //       dict[tokenId] = addressName;
-          //     })
-
+          // Send Request and Parse JSON Response
+          var request = new XMLHttpRequest();
+          request.responseType = 'json';
+          request.open('GET', namesUrl, true);
+          request.onload  = function() {
+            var jsonResponse = request.response;
+            // Error Checking Request
+            if (request.status >= 200 && request.status < 400) {
+              jsonResponse.forEach(name => {
+                var tokenId = name["tokenId"];
+                var addressName = name["addressName"]
+                dict[tokenId] = addressName;
+              })
               var sceneEl = document.querySelector('a-scene'); 
               for (var i = 0; i < 100; i++) {
-                  // var boxEl = document.createElement('a-box');
-                  // boxEl.setAttribute('material', {color: '#173852'});
-                  // boxEl.setAttribute('position', {x: i, y: i, z: i});
-                  // //boxEl.setAttribute('scale', {x: Math.random() / 2, y: Math.random() / 2, z: Math.random() / 2});
-                  // sceneEl.appendChild(boxEl);
-
                   var textEl = document.createElement('a-entity');
                   var textPosX = (Math.floor(i/10)*2)-7.5;
                   var textPosY = 5 - (i%10)*0.3;
                   var textPosZ = -10 + 0.126;
-                  var textValue = 'Alice Kisaragi';
-                  // var textValue = dict[i];
+                  // var textValue = 'Alice Kisaragi';
+                  var textValue = dict[i];
                   console.log(dict[i]);
                   textEl.setAttribute('geometry', {width: 'auto', height: 'auto'});
                   textEl.setAttribute('position', {x: textPosX, y: textPosY, z: textPosZ}); 
                   textEl.setAttribute('text', {width:'5', value: textValue, whiteSpace: 'nowrap'});
                   sceneEl.appendChild(textEl);
                 }
-
-          //   } else {
-          //     console.log('error')
-          //   }
-          // };
-          // request.send(null);          
+            } else {
+              console.log('error')
+            }
+          };
+          request.send(null);          
          }
       });
     
@@ -74,7 +63,8 @@
     <a-scene monument-collection>
       <!-- Assets  -->
       <a-assets>
-        <!-- <img id="boxTexture" src="assets/stones.jpg"> -->
+        <img id="controlsQuest" src="assets/images/aframe-quest-controls-0.2.png">
+        <img id="controlsPC" src="assets/images/aframe-pc-controls.png">
         <img id="skyTexture"
           src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
       </a-assets>    
@@ -153,6 +143,30 @@
             scale="23.5 3 2.5" 
           >
           </a-box>
+
+        <!-- Instructions Box -->
+        <a-box 
+          src="#controlsQuest" 
+          color="#173852"
+          position="-10 2.5 6.5" 
+          scale="0 5 10" 
+        >
+        </a-box>
+        <a-box 
+        src="#controlsPC" 
+        color="#173852"
+        position="-10 2.5 -1" 
+        scale="0 5 5" 
+        >
+        </a-box>
+
+        <!-- Store Box -->
+        <!-- <a-box 
+          color="#343737"
+          position="0 1.75 0" 
+          scale="1 1 .25" 
+        >
+        </a-box> -->
 
         <!-- Walls -->
         <a-box 
