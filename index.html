@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Immria (Novus)</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
+    <script type="text/javascript" language="javascript">
+      AFRAME.registerComponent('monument-collection', {
+        init: function () {
+
+          // Set up request to retrieve names from API endpoint
+          var serverApiUrl = "https://pjrbfk87db.execute-api.us-east-1.amazonaws.com/dev/";
+          var apiGetNames = "items";
+          var namesUrl = serverApiUrl + apiGetNames;
+          var dict = {};
+
+          // Send Request and Parse JSON Response
+          var request = new XMLHttpRequest();
+          request.responseType = 'json';
+          request.open('GET', namesUrl, true);
+          request.onload  = function() {
+            var jsonResponse = request.response;
+            // Error Checking Request
+            if (request.status >= 200 && request.status < 400) {
+              jsonResponse.forEach(name => {
+                var tokenId = name["tokenId"];
+                var addressName = name["addressName"]
+                dict[tokenId] = addressName;
+              })
+              var sceneEl = document.querySelector('a-scene'); 
+              for (var i = 0; i < 100; i++) {
+                  var textEl = document.createElement('a-entity');
+                  var textPosX = (Math.floor(i/10)*2)-7.5;
+                  var textPosY = 5 - (i%10)*0.3;
+                  var textPosZ = -10 + 0.126;
+                  // var textValue = 'Alice Kisaragi';
+                  var textValue = dict[i];
+                  // console.log(dict[i]); // DEBUG
+                  textEl.setAttribute('geometry', {width: 'auto', height: 'auto'});
+                  textEl.setAttribute('position', {x: textPosX, y: textPosY, z: textPosZ}); 
+                  textEl.setAttribute('text', {width:'5', value: textValue, whiteSpace: 'nowrap'});
+                  sceneEl.appendChild(textEl);
+                }
+            } else {
+              console.log('error')
+            }
+          };
+          request.send(null);          
+         }
+      });
+    
+      AFRAME.registerComponent('click-handler', {
+        init: function () {
+          var el = this.el;        
+          el.addEventListener('click', function () {
+            window.open(`https://atemosta.com/projects/immria/#engraving`, '_blank')
+          }); 
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a-scene monument-collection>
+      <!-- Assets  -->
+      <a-assets>
+        <img id="controlsQuest" src="assets/images/aframe-quest-controls-0.2.png">
+        <img id="controlsPC" src="assets/images/aframe-pc-controls.png">
+        <img id="engravePoster" src="assets/images/engrave.png">
+        <img id="skyTexture"
+          src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+      </a-assets>    
+
+      <!-- Scene Geometry -->
+      <a-entity id="bgm" sound="src: url(assets/human-village.mp3); autoplay: true; volume: 0.1; loop: true; positional: false">
+      </a-entity>
+      <a-plane id="floor" color="#505559" rotation="-90 0 0" width="50" height="50"></a-plane>
+      <a-sky src="#skyTexture"></a-sky>
+
+      <!-- hand controls -->
+      <a-entity id="player" position="0 -0.2 4" >
+        <!-- camera -->
+        <a-entity id="camera" camera wasd-controls 
+          camera="near: 0.001; far: 1000;" 
+          position="0 1.7 0" 
+          look-controls="pointerLockEnabled: true"
+        >
+          <a-entity cursor="fuse: false"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: black; shader: flat">
+          </a-entity>
+        </a-entity>
+        <!-- <a-camera>
+          <a-cursor></a-cursor>
+        </a-camera> -->
+
+        <!-- hand controls -->
+        <a-entity id="left-hand" 
+          vive-controls="hand: left"
+          oculus-touch-controls="hand: left"
+          microsoft-motion-controls="hand: left"
+          daydream-controls="left" 
+          gearvr-controls="left"        
+          blink-controls>
+        </a-entity>
+        <a-entity id="right-hand" 
+          vive-controls="hand: right"
+          microsoft-motion-controls="hand: right"
+          oculus-touch-controls="hand: right"
+          daydream-controls="right" 
+          gearvr-controls="right"          
+          blink-controls>
+        </a-entity>
+      </a-entity>
+
+      <!-- Components -->
+        <!-- Main Monument -->
+        <a-box 
+          color="#173852"
+          position="-0.1 3.65 -10" 
+          rotation="0 0 0"
+          scale="20 3.2 0.25" 
+        >
+        </a-box>
+          <!-- Main Feet -->
+          <a-box 
+            color="#173852"
+            position="5 1.75 -10" 
+            scale="1 1 .25" 
+          >
+          </a-box>
+          <a-box 
+            color="#173852"aframe-pc-controls
+            position="-5 1.75 -10" 
+            scale="1 1 .25" 
+          >
+          </a-box>
+          <!-- Main Stairs -->
+          <a-box 
+            color="#354654"
+            position="0 0 -10" 
+            scale="22.5 3 1.5" 
+          >
+          </a-box>
+          <a-box 
+            color="#424F59"
+            position="0 -.5 -10" 
+            scale="23 3 2" 
+          >
+          </a-box>
+          <a-box 
+            color="#4A5259"
+            position="0 -1 -10" 
+            scale="23.5 3 2.5" 
+          >
+          </a-box>
+
+        <!-- Instructions Box -->
+        <a-box 
+          src="#controlsQuest" 
+          position="-10 2.5 6.5" 
+          scale="0 5 10" 
+        >
+        </a-box>
+        <a-box 
+        src="#controlsPC" 
+        position="-10 2.5 -1" 
+        scale="0 5 5" 
+        >
+        </a-box>
+
+        <!-- Store Box -->
+        <a-box 
+          src="#engravePoster" 
+          position="10 2.5 5" 
+          scale="0 5 10" 
+          click-handler
+        >
+        </a-box>
+
+        <!-- Walls -->
+        <a-box 
+          color="#343737"
+          position="-0.1 5 -25," 
+          rotation="0 0 0"
+          scale="50 10 0.25" 
+        >
+        </a-box>
+        <a-box 
+          color="#343737"
+          position="25 5 0," 
+          rotation="0 90 0"
+          scale="50 10 0.25" 
+        >
+        </a-box>
+        <a-box 
+          color="#343737"
+          position="-25 5 0," 
+          rotation="0 90 0"
+          scale="50 10 0.25" 
+        >
+        </a-box>
+
+    </a-scene>
+  </body>
+</html>
