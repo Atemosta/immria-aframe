@@ -14,8 +14,10 @@
           const urlString = window.location.href;
           console.log(urlString)
           let paramString = urlString.split('?')[1];
-          let queryDict = new URLSearchParams(paramString);
-          let world = queryDict["world"] ? queryDict["world"] : "monument"; // Set World if URL Param Supplied, else default to monument
+          let paramsArr = paramString.split('&');
+          console.log(paramsArr);
+          console.log(paramsArr[0]);
+          let world = paramsArr[0] ? paramsArr[0] : "monument"; // Set World if URL Param Supplied, else default to monument
           console.log("World: " + world);
 
           // Set up request to retrieve names from API endpoint
