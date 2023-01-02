@@ -10,9 +10,17 @@
       AFRAME.registerComponent('monument-collection', {
         init: function () {
 
+          // Get Params from URL
+          const urlString = window.location.href;
+          console.log(urlString)
+          let paramString = urlString.split('?')[1];
+          let queryDict = new URLSearchParams(paramString);
+          let world = queryDict["world"] ? queryDict["world"] : "monument"; // Set World if URL Param Supplied, else default to monument
+          console.log("World: " + world);
+
           // Set up request to retrieve names from API endpoint
-          var serverApiUrl = "https://pjrbfk87db.execute-api.us-east-1.amazonaws.com/dev/";
-          var apiGetNames = "items";
+          var serverApiUrl = "http://0.0.0.0:1545";
+          var apiGetNames = "/names/" + world;
           var namesUrl = serverApiUrl + apiGetNames;
           var dict = {};
 
@@ -25,8 +33,8 @@
             // Error Checking Request
             if (request.status >= 200 && request.status < 400) {
               jsonResponse.forEach(name => {
-                var tokenId = name["tokenId"];
-                var addressName = name["tokenName"];
+                var tokenId = name["tokenid"];
+                var addressName = name["value"];
                 dict[tokenId] = addressName;
               })
               var sceneEl = document.querySelector('a-scene'); 
@@ -55,7 +63,7 @@
         init: function () {
           var el = this.el;        
           el.addEventListener('click', function () {
-            window.open(`https://immria.atemosta.com/index.html`, '_blank')
+            window.open(`https://dev.immria.atemosta.com/index.html`, '_blank')
           }); 
         }
       });
