@@ -1,0 +1,1027 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "translation": [
+                -0.9000045,
+                1.4395788,
+                -0.2700008
+            ],
+            "rotation": [
+                0.0,
+                0.8663723,
+                0.0,
+                -0.4993986
+            ],
+            "scale": [
+                1.0000044,
+                1.0,
+                1.0000044
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "58": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "type": "sun"
+                    }
+                }
+            ]
+        },
+        "94": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "name": "Terrain",
+            "translation": [
+                0.0,
+                -0.5,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scale": [
+                1.0,
+                0.9999997,
+                0.9999997
+            ]
+        },
+        "95": {
+            "link": {
+                "name": "709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "94"
+        },
+        "96": {
+            "link": {
+                "name": "RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "95"
+        },
+        "97": {
+            "link": {
+                "name": "Camera<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "98": {
+            "link": {
+                "name": "Object_4<Camera<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "97"
+        },
+        "99": {
+            "link": {
+                "name": "Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "100": {
+            "link": {
+                "name": "Terrain_Grass_0<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "101": {
+            "link": {
+                "name": "Terrain_Grass C2_0<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "102": {
+            "link": {
+                "name": "Terrain_Dirt_0<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "103": {
+            "link": {
+                "name": "Water<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "104": {
+            "link": {
+                "name": "Water_River_0<Water<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "103"
+        },
+        "105": {
+            "link": {
+                "name": "Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "106": {
+            "link": {
+                "name": "Rocks_Rocks_0<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "107": {
+            "link": {
+                "name": "rock.001<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "108": {
+            "link": {
+                "name": "rock.001_Rocks_0<rock.001<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "107"
+        },
+        "109": {
+            "link": {
+                "name": "rock.002<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "110": {
+            "link": {
+                "name": "rock.002_Rocks_0<rock.002<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "109"
+        },
+        "111": {
+            "link": {
+                "name": "rock.004<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "112": {
+            "link": {
+                "name": "rock.004_Rocks_0<rock.004<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "111"
+        },
+        "113": {
+            "link": {
+                "name": "rock.005<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "114": {
+            "link": {
+                "name": "rock.005_Rocks_0<rock.005<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "113"
+        },
+        "115": {
+            "link": {
+                "name": "rock.006<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "116": {
+            "link": {
+                "name": "rock.006_Rocks_0<rock.006<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "115"
+        },
+        "117": {
+            "link": {
+                "name": "rock.007<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "118": {
+            "link": {
+                "name": "rock.007_Rocks_0<rock.007<Rocks<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "117"
+        },
+        "119": {
+            "link": {
+                "name": "Dock<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "120": {
+            "link": {
+                "name": "Dock_Wood C1_0<Dock<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "119"
+        },
+        "121": {
+            "link": {
+                "name": "Dock_Wood C2_0<Dock<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "119"
+        },
+        "122": {
+            "link": {
+                "name": "Trees<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "123": {
+            "link": {
+                "name": "Trees_Tree Tunks_0<Trees<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "122"
+        },
+        "124": {
+            "link": {
+                "name": "Trees_Leaves Tree_0<Trees<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "122"
+        },
+        "125": {
+            "link": {
+                "name": "Wooden Bridge<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "126": {
+            "link": {
+                "name": "Wooden Bridge_Wood C1_0<Wooden Bridge<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "125"
+        },
+        "127": {
+            "link": {
+                "name": "Wooden Bridge_Wood C2_0<Wooden Bridge<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "125"
+        },
+        "128": {
+            "link": {
+                "name": "Wooden Bridge_Rope Handle_0<Wooden Bridge<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "125"
+        },
+        "129": {
+            "link": {
+                "name": "Wooden Boat<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "130": {
+            "link": {
+                "name": "Wooden Boat_Woodeng Boat_0<Wooden Boat<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "129"
+        },
+        "131": {
+            "link": {
+                "name": "Cylinder<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "132": {
+            "link": {
+                "name": "Cylinder_Wood C2_0<Cylinder<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "131"
+        },
+        "133": {
+            "link": {
+                "name": "Cylinder_Material.001_0<Cylinder<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "131"
+        },
+        "134": {
+            "link": {
+                "name": "Cylinder_Lantern_0<Cylinder<Terrain<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "131"
+        },
+        "135": {
+            "link": {
+                "name": "Area<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "136": {
+            "link": {
+                "name": "Object_42<Area<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "135"
+        },
+        "137": {
+            "link": {
+                "name": "Object_43<Object_42<Area<RootNode<709f565c8bb4462ab15793810f48babd.fbx<Sketchfab_model",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            },
+            "parent": "136"
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "Terrain_Grass_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "Terrain_Grass C2_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "Terrain_Dirt_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "Water_River_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "76": {
+            "link": {
+                "name": "Rocks_Rocks_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "77": {
+            "link": {
+                "name": "rock.001_Rocks_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "78": {
+            "link": {
+                "name": "rock.002_Rocks_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "79": {
+            "link": {
+                "name": "rock.004_Rocks_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "rock.005_Rocks_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "81": {
+            "link": {
+                "name": "rock.006_Rocks_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "rock.007_Rocks_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "Dock_Wood C1_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "84": {
+            "link": {
+                "name": "Dock_Wood C2_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "85": {
+            "link": {
+                "name": "Trees_Tree Tunks_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "Trees_Leaves Tree_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "Wooden Bridge_Wood C1_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "Wooden Bridge_Wood C2_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "Wooden Bridge_Rope Handle_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "Wooden Boat_Woodeng Boat_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "Cylinder_Wood C2_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "Cylinder_Material.001_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "Cylinder_Lantern_0",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "55"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "59": {
+            "link": {
+                "name": "Grass",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "Grass_C2",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "Dirt",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "River",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "Rocks",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "Wood_C1",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "Wood_C2",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "Tree_Tunks",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "Leaves_Tree",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "Rope_Handle",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "Woodeng_Boat",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "Material.001",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "Lantern",
+                "file": "models\\low_poly_forest_scene_1\\scene.gltf"
+            }
+        },
+        "140": {
+            "name": "Skyu",
+            "pipeline": "54",
+            "Sky": {
+                "texture": "139"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "forest2",
+            "version": [
+                0,
+                9,
+                5
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "rendering": {
+            "sky": {
+                "enabled": true,
+                "material": "140"
+            }
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        }
+    },
+    "textures": {
+        "139": {
+            "link": {
+                "name": "skybox.jpg",
+                "file": "models\\skybox.jpg"
+            }
+        }
+    },
+    "images": {
+        "138": {
+            "link": {
+                "name": "skybox.jpg",
+                "file": "models\\skybox.jpg"
+            }
+        }
+    },
+    "fonts": {
+        "55": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/low_poly_forest_scene_1/scene.gltf",
+        "models/skybox.jpg"
+    ]
+}

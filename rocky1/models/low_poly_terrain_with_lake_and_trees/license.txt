@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Terrain with Lake and Trees
+* source:	https://sketchfab.com/3d-models/low-poly-terrain-with-lake-and-trees-3c1f225e489945a0b336c64a9c173575
+* author:	ronilbiswas.8937 (https://sketchfab.com/ronilbiswas.8937)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Terrain with Lake and Trees" (https://sketchfab.com/3d-models/low-poly-terrain-with-lake-and-trees-3c1f225e489945a0b336c64a9c173575) by ronilbiswas.8937 (https://sketchfab.com/ronilbiswas.8937) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

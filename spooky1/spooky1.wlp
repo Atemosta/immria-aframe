@@ -1,0 +1,1451 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "translation": [
+                -0.6954604,
+                0.7015976,
+                -0.0955208
+            ],
+            "rotation": [
+                0.0,
+                -0.7411134,
+                0.0,
+                0.6713798
+            ],
+            "scale": [
+                1.0000054,
+                1.0,
+                1.0000054
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1,
+                        "type": "point"
+                    }
+                }
+            ],
+            "translation": [
+                0.0246863,
+                2.4104049,
+                -0.2953183
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "95": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "name": "Terrain1"
+        },
+        "96": {
+            "link": {
+                "name": "f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "95"
+        },
+        "97": {
+            "link": {
+                "name": "Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "98": {
+            "link": {
+                "name": "RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "97"
+        },
+        "99": {
+            "link": {
+                "name": "pCylinder1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "100": {
+            "link": {
+                "name": "transform1<pCylinder1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "101": {
+            "link": {
+                "name": "transform3<pCylinder1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "102": {
+            "link": {
+                "name": "pDisc1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "103": {
+            "link": {
+                "name": "transform2<pDisc1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "102"
+        },
+        "104": {
+            "link": {
+                "name": "pCylinder2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "105": {
+            "link": {
+                "name": "pCylinder3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "106": {
+            "link": {
+                "name": "transform5<pCylinder3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "107": {
+            "link": {
+                "name": "pCylinder4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "108": {
+            "link": {
+                "name": "pTorus1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "109": {
+            "link": {
+                "name": "transform4<pTorus1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "108"
+        },
+        "110": {
+            "link": {
+                "name": "pDisc2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "111": {
+            "link": {
+                "name": "pDisc2_standardSurface3_0<pDisc2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "110"
+        },
+        "112": {
+            "link": {
+                "name": "pPlane1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "113": {
+            "link": {
+                "name": "pPlane1_lambert5_0<pPlane1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "114": {
+            "link": {
+                "name": "fuck<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "115": {
+            "link": {
+                "name": "fuck_lambert21_0<fuck<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "114"
+        },
+        "116": {
+            "link": {
+                "name": "pCube1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "117": {
+            "link": {
+                "name": "pCube1_lambert22_0<pCube1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "116"
+        },
+        "118": {
+            "link": {
+                "name": "pSphere1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "119": {
+            "link": {
+                "name": "pSphere2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "120": {
+            "link": {
+                "name": "pSphere3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "121": {
+            "link": {
+                "name": "transform9<pSphere3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "120"
+        },
+        "122": {
+            "link": {
+                "name": "pPlane2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "123": {
+            "link": {
+                "name": "pPlane3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "124": {
+            "link": {
+                "name": "transform7<pPlane3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "123"
+        },
+        "125": {
+            "link": {
+                "name": "pSphere4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "126": {
+            "link": {
+                "name": "transform6<pSphere4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "125"
+        },
+        "127": {
+            "link": {
+                "name": "pSphere5<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "128": {
+            "link": {
+                "name": "transform8<pSphere5<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "127"
+        },
+        "129": {
+            "link": {
+                "name": "pSphere6<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "130": {
+            "link": {
+                "name": "transform10<pSphere6<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "129"
+        },
+        "131": {
+            "link": {
+                "name": "pSphere7<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "132": {
+            "link": {
+                "name": "pSphere7_lambert23_0<pSphere7<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "131"
+        },
+        "133": {
+            "link": {
+                "name": "pCube2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "134": {
+            "link": {
+                "name": "pCube2_lambert24_0<pCube2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "133"
+        },
+        "135": {
+            "link": {
+                "name": "pPlane4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "136": {
+            "link": {
+                "name": "pPlane4_lambert5_0<pPlane4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "135"
+        },
+        "137": {
+            "link": {
+                "name": "pPlane5<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "138": {
+            "link": {
+                "name": "pPlane5_lambert5_0<pPlane5<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "137"
+        },
+        "139": {
+            "link": {
+                "name": "pPlane6<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "140": {
+            "link": {
+                "name": "pPlane6_lambert5_0<pPlane6<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "139"
+        },
+        "141": {
+            "link": {
+                "name": "pSphere8<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "142": {
+            "link": {
+                "name": "pSphere8_lambert1_0<pSphere8<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "141"
+        },
+        "143": {
+            "link": {
+                "name": "group<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "144": {
+            "link": {
+                "name": "pasted__pCylinder5<group<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "143"
+        },
+        "145": {
+            "link": {
+                "name": "pasted__pCylinder5_pasted__lambert18_0<pasted__pCylinder5<group<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "144"
+        },
+        "148": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "name": "Terrain2",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -3.0908378079175236e-8,
+                -0.7071012,
+                -0.7071123,
+                -3.090886124823555e-8
+            ],
+            "scale": [
+                0.1780816,
+                0.1780802,
+                0.1780789
+            ]
+        },
+        "149": {
+            "link": {
+                "name": "f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "148"
+        },
+        "150": {
+            "link": {
+                "name": "Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "149"
+        },
+        "151": {
+            "link": {
+                "name": "RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "150"
+        },
+        "152": {
+            "link": {
+                "name": "pCylinder1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "153": {
+            "link": {
+                "name": "transform1<pCylinder1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "152"
+        },
+        "154": {
+            "link": {
+                "name": "transform3<pCylinder1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "152"
+        },
+        "155": {
+            "link": {
+                "name": "pDisc1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "156": {
+            "link": {
+                "name": "transform2<pDisc1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "155"
+        },
+        "157": {
+            "link": {
+                "name": "pCylinder2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "158": {
+            "link": {
+                "name": "pCylinder3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "159": {
+            "link": {
+                "name": "transform5<pCylinder3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "158"
+        },
+        "160": {
+            "link": {
+                "name": "pCylinder4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "161": {
+            "link": {
+                "name": "pTorus1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "162": {
+            "link": {
+                "name": "transform4<pTorus1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "161"
+        },
+        "163": {
+            "link": {
+                "name": "pDisc2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "164": {
+            "link": {
+                "name": "pDisc2_standardSurface3_0<pDisc2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "163"
+        },
+        "165": {
+            "link": {
+                "name": "pPlane1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "166": {
+            "link": {
+                "name": "pPlane1_lambert5_0<pPlane1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "165"
+        },
+        "167": {
+            "link": {
+                "name": "fuck<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "168": {
+            "link": {
+                "name": "fuck_lambert21_0<fuck<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "167"
+        },
+        "169": {
+            "link": {
+                "name": "pCube1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "170": {
+            "link": {
+                "name": "pCube1_lambert22_0<pCube1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "169"
+        },
+        "171": {
+            "link": {
+                "name": "pSphere1<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "172": {
+            "link": {
+                "name": "pSphere2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "173": {
+            "link": {
+                "name": "pSphere3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "174": {
+            "link": {
+                "name": "transform9<pSphere3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "173"
+        },
+        "175": {
+            "link": {
+                "name": "pPlane2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "176": {
+            "link": {
+                "name": "pPlane3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "177": {
+            "link": {
+                "name": "transform7<pPlane3<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "176"
+        },
+        "178": {
+            "link": {
+                "name": "pSphere4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "179": {
+            "link": {
+                "name": "transform6<pSphere4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "178"
+        },
+        "180": {
+            "link": {
+                "name": "pSphere5<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "181": {
+            "link": {
+                "name": "transform8<pSphere5<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "180"
+        },
+        "182": {
+            "link": {
+                "name": "pSphere6<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "183": {
+            "link": {
+                "name": "transform10<pSphere6<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "182"
+        },
+        "184": {
+            "link": {
+                "name": "pSphere7<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "185": {
+            "link": {
+                "name": "pSphere7_lambert23_0<pSphere7<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "184"
+        },
+        "186": {
+            "link": {
+                "name": "pCube2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "187": {
+            "link": {
+                "name": "pCube2_lambert24_0<pCube2<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "186"
+        },
+        "188": {
+            "link": {
+                "name": "pPlane4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "189": {
+            "link": {
+                "name": "pPlane4_lambert5_0<pPlane4<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "188"
+        },
+        "190": {
+            "link": {
+                "name": "pPlane5<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "191": {
+            "link": {
+                "name": "pPlane5_lambert5_0<pPlane5<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "190"
+        },
+        "192": {
+            "link": {
+                "name": "pPlane6<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "193": {
+            "link": {
+                "name": "pPlane6_lambert5_0<pPlane6<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "192"
+        },
+        "194": {
+            "link": {
+                "name": "pSphere8<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "195": {
+            "link": {
+                "name": "pSphere8_lambert1_0<pSphere8<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "194"
+        },
+        "196": {
+            "link": {
+                "name": "group<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "197": {
+            "link": {
+                "name": "pasted__pCylinder5<group<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "196"
+        },
+        "198": {
+            "link": {
+                "name": "pasted__pCylinder5_pasted__lambert18_0<pasted__pCylinder5<group<RootNode<Object_2<f8240f6d6561458d8bf036c89222005b.fbx<Sketchfab_model",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            },
+            "parent": "197"
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "84": {
+            "link": {
+                "name": "pDisc2_standardSurface3_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "85": {
+            "link": {
+                "name": "pPlane1_lambert5_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "fuck_lambert21_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "pCube1_lambert22_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "pSphere7_lambert23_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "pCube2_lambert24_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "pPlane4_lambert5_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "pPlane5_lambert5_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "pPlane6_lambert5_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "pSphere8_lambert1_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "pasted__pCylinder5_pasted__lambert18_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "55"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "76": {
+            "link": {
+                "name": "standardSurface3",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "77": {
+            "link": {
+                "name": "lambert5",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "78": {
+            "link": {
+                "name": "lambert21",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "79": {
+            "link": {
+                "name": "lambert22",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "lambert23",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "81": {
+            "link": {
+                "name": "lambert24",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "lambert1",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "pasted__lambert18",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "spooky1",
+            "version": [
+                0,
+                9,
+                5
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "rendering": {
+            "clearColor": [
+                0.1092502,
+                0.0,
+                0.290196,
+                1.0
+            ]
+        }
+    },
+    "animations": {
+        "146": {
+            "link": {
+                "name": "Take 001",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        }
+    },
+    "skins": {},
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        }
+    },
+    "textures": {
+        "67": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "texture_3",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "texture_4",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "texture_5",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "texture_6",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "texture_7",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "texture_8",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        }
+    },
+    "images": {
+        "58": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "59": {
+            "link": {
+                "name": "image_1",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "image_2",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "image_3",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "image_4",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "image_5",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "image_6",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "image_7",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "image_8",
+                "file": "models\\spooky_low_poly_living_room_animation\\scene.gltf"
+            }
+        }
+    },
+    "fonts": {
+        "55": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/spooky_low_poly_living_room_animation/scene.gltf"
+    ]
+}

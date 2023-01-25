@@ -106,7 +106,7 @@
             "translation": [
                 0.0,
                 -1.4838013,
-                1.7881393432617188e-7
+                1.788139343261719e-7
             ],
             "rotation": [
                 -0.7071066,
@@ -1478,6 +1478,13 @@
                 "name": "Snow",
                 "file": "models\\terrain_low_poly\\scene.gltf"
             }
+        },
+        "244": {
+            "name": "Sky",
+            "pipeline": "54",
+            "Sky": {
+                "texture": "243"
+            }
         }
     },
     "shaders": {
@@ -1620,6 +1627,12 @@
                 "/js/editor-components-bundle.js",
                 "js/"
             ]
+        },
+        "rendering": {
+            "sky": {
+                "enabled": true,
+                "material": "244"
+            }
         }
     },
     "animations": {},
@@ -1716,8 +1729,22 @@
             }
         }
     },
-    "textures": {},
-    "images": {},
+    "textures": {
+        "243": {
+            "link": {
+                "name": "skybox.jpg",
+                "file": "models\\skybox\\skybox.jpg"
+            }
+        }
+    },
+    "images": {
+        "242": {
+            "link": {
+                "name": "skybox.jpg",
+                "file": "models\\skybox\\skybox.jpg"
+            }
+        }
+    },
     "fonts": {
         "55": {
             "link": {
@@ -1727,6 +1754,7 @@
         }
     },
     "files": [
-        "models/terrain_low_poly/scene.gltf"
+        "models/terrain_low_poly/scene.gltf",
+        "models/skybox/skybox.jpg"
     ]
 }

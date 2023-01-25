@@ -1,0 +1,11 @@
+Model Information:
+* title:	Spooky low poly living room (animation)
+* source:	https://sketchfab.com/3d-models/spooky-low-poly-living-room-animation-420f195195d5404ba40404ed99155f85
+* author:	Lucas Wiseman (https://sketchfab.com/LucasWiseman)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Spooky low poly living room (animation)" (https://sketchfab.com/3d-models/spooky-low-poly-living-room-animation-420f195195d5404ba40404ed99155f85) by Lucas Wiseman (https://sketchfab.com/LucasWiseman) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

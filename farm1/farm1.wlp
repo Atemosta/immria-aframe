@@ -1,0 +1,1371 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "translation": [
+                2.7203693,
+                1.8000245,
+                -10.9454393
+            ],
+            "rotation": [
+                0.0,
+                0.9955029,
+                0.0,
+                0.0947304
+            ],
+            "scale": [
+                1.000012,
+                1.0,
+                1.000012
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1,
+                        "type": "sun"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                3.0,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "110": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "name": "Terrain",
+            "translation": [
+                50.0777206,
+                0.0000047,
+                -29.5802803
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scale": [
+                1.0,
+                0.9999756,
+                0.9999756
+            ]
+        },
+        "111": {
+            "link": {
+                "name": "root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "110"
+        },
+        "112": {
+            "link": {
+                "name": "GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "111"
+        },
+        "113": {
+            "link": {
+                "name": "_2<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "114": {
+            "link": {
+                "name": "scene-0_1<_2<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "113"
+        },
+        "115": {
+            "link": {
+                "name": "node-0_0<scene-0_1<_2<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "114"
+        },
+        "116": {
+            "link": {
+                "name": "Object_6<node-0_0<scene-0_1<_2<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "115"
+        },
+        "117": {
+            "link": {
+                "name": "_5<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "118": {
+            "link": {
+                "name": "defaultScene_4<_5<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "117"
+        },
+        "119": {
+            "link": {
+                "name": "node_MeshObject463054976-PolyPaper20_3<defaultScene_4<_5<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "118"
+        },
+        "120": {
+            "link": {
+                "name": "Object_10<node_MeshObject463054976-PolyPaper20_3<defaultScene_4<_5<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "119"
+        },
+        "121": {
+            "link": {
+                "name": "_8<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "122": {
+            "link": {
+                "name": "defaultScene_7<_8<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "121"
+        },
+        "123": {
+            "link": {
+                "name": "node_MeshObject463054976-PolyPaper20_6<defaultScene_7<_8<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "122"
+        },
+        "124": {
+            "link": {
+                "name": "Object_14<node_MeshObject463054976-PolyPaper20_6<defaultScene_7<_8<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "123"
+        },
+        "125": {
+            "link": {
+                "name": "_12<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "126": {
+            "link": {
+                "name": "defaultScene_10<_12<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "125"
+        },
+        "127": {
+            "link": {
+                "name": "node_MeshObject463054976-PolyPaper20_9<defaultScene_10<_12<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "126"
+        },
+        "128": {
+            "link": {
+                "name": "Object_18<node_MeshObject463054976-PolyPaper20_9<defaultScene_10<_12<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "127"
+        },
+        "129": {
+            "link": {
+                "name": "_15<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "130": {
+            "link": {
+                "name": "scene-0_14<_15<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "129"
+        },
+        "131": {
+            "link": {
+                "name": "node-0_13<scene-0_14<_15<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "130"
+        },
+        "132": {
+            "link": {
+                "name": "Object_22<node-0_13<scene-0_14<_15<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "131"
+        },
+        "133": {
+            "link": {
+                "name": "_18<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "134": {
+            "link": {
+                "name": "scene-0_17<_18<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "133"
+        },
+        "135": {
+            "link": {
+                "name": "node-0_16<scene-0_17<_18<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "134"
+        },
+        "136": {
+            "link": {
+                "name": "Object_26<node-0_16<scene-0_17<_18<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "135"
+        },
+        "137": {
+            "link": {
+                "name": "_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "138": {
+            "link": {
+                "name": "scene-0_23<_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "137"
+        },
+        "139": {
+            "link": {
+                "name": "node-0_22<scene-0_23<_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "138"
+        },
+        "140": {
+            "link": {
+                "name": "buffer-0-mesh-0_0_19<node-0_22<scene-0_23<_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "139"
+        },
+        "141": {
+            "link": {
+                "name": "Object_31<buffer-0-mesh-0_0_19<node-0_22<scene-0_23<_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "140"
+        },
+        "142": {
+            "link": {
+                "name": "buffer-0-mesh-0_1_20<node-0_22<scene-0_23<_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "139"
+        },
+        "143": {
+            "link": {
+                "name": "Object_33<buffer-0-mesh-0_1_20<node-0_22<scene-0_23<_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "142"
+        },
+        "144": {
+            "link": {
+                "name": "buffer-0-mesh-0_2_21<node-0_22<scene-0_23<_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "139"
+        },
+        "145": {
+            "link": {
+                "name": "Object_35<buffer-0-mesh-0_2_21<node-0_22<scene-0_23<_24<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "144"
+        },
+        "146": {
+            "link": {
+                "name": "_27<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "147": {
+            "link": {
+                "name": "scene-0_26<_27<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "146"
+        },
+        "148": {
+            "link": {
+                "name": "node-0_25<scene-0_26<_27<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "147"
+        },
+        "149": {
+            "link": {
+                "name": "Object_39<node-0_25<scene-0_26<_27<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "148"
+        },
+        "150": {
+            "link": {
+                "name": "_30<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "151": {
+            "link": {
+                "name": "scene-0_29<_30<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "150"
+        },
+        "152": {
+            "link": {
+                "name": "node-0_28<scene-0_29<_30<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "151"
+        },
+        "153": {
+            "link": {
+                "name": "Object_43<node-0_28<scene-0_29<_30<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "152"
+        },
+        "154": {
+            "link": {
+                "name": "_33<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "155": {
+            "link": {
+                "name": "defaultScene_32<_33<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "154"
+        },
+        "156": {
+            "link": {
+                "name": "node_MeshObject463054976-PolyPaper20_31<defaultScene_32<_33<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "155"
+        },
+        "157": {
+            "link": {
+                "name": "Object_47<node_MeshObject463054976-PolyPaper20_31<defaultScene_32<_33<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "156"
+        },
+        "158": {
+            "link": {
+                "name": "_36<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "159": {
+            "link": {
+                "name": "scene-0_35<_36<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "158"
+        },
+        "160": {
+            "link": {
+                "name": "node-0_34<scene-0_35<_36<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "159"
+        },
+        "161": {
+            "link": {
+                "name": "Object_51<node-0_34<scene-0_35<_36<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "160"
+        },
+        "162": {
+            "link": {
+                "name": "_39<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "163": {
+            "link": {
+                "name": "scene-0_38<_39<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "162"
+        },
+        "164": {
+            "link": {
+                "name": "node-0_37<scene-0_38<_39<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "163"
+        },
+        "165": {
+            "link": {
+                "name": "Object_55<node-0_37<scene-0_38<_39<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "164"
+        },
+        "166": {
+            "link": {
+                "name": "_42<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "167": {
+            "link": {
+                "name": "scene-0_41<_42<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "166"
+        },
+        "168": {
+            "link": {
+                "name": "node-0_40<scene-0_41<_42<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "167"
+        },
+        "169": {
+            "link": {
+                "name": "Object_59<node-0_40<scene-0_41<_42<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "168"
+        },
+        "170": {
+            "link": {
+                "name": "_45<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "171": {
+            "link": {
+                "name": "scene-0_44<_45<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "170"
+        },
+        "172": {
+            "link": {
+                "name": "node-0_43<scene-0_44<_45<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "171"
+        },
+        "173": {
+            "link": {
+                "name": "Object_63<node-0_43<scene-0_44<_45<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "172"
+        },
+        "174": {
+            "link": {
+                "name": "_49<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "175": {
+            "link": {
+                "name": "scene-0_48<_49<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "174"
+        },
+        "176": {
+            "link": {
+                "name": "node-0_47<scene-0_48<_49<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "177": {
+            "link": {
+                "name": "Object_67<node-0_47<scene-0_48<_49<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "176"
+        },
+        "178": {
+            "link": {
+                "name": "_53<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "112"
+        },
+        "179": {
+            "link": {
+                "name": "scene-0_52<_53<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "178"
+        },
+        "180": {
+            "link": {
+                "name": "node-0_51<scene-0_52<_53<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "179"
+        },
+        "181": {
+            "link": {
+                "name": "Object_71<node-0_51<scene-0_52<_53<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            },
+            "parent": "180"
+        },
+        "182": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1,
+                        "type": "sun"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                8.404066,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                2.4882028,
+                1.0
+            ],
+            "parent": null
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "Object_0",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "Object_1",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "Object_2",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "95": {
+            "link": {
+                "name": "Object_3",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "96": {
+            "link": {
+                "name": "Object_4",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "97": {
+            "link": {
+                "name": "Object_5",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "98": {
+            "link": {
+                "name": "Object_6",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "99": {
+            "link": {
+                "name": "Object_7",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "100": {
+            "link": {
+                "name": "Object_8",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "101": {
+            "link": {
+                "name": "Object_9",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "102": {
+            "link": {
+                "name": "Object_10",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "103": {
+            "link": {
+                "name": "Object_11",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "104": {
+            "link": {
+                "name": "Object_12",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "105": {
+            "link": {
+                "name": "Object_13",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "106": {
+            "link": {
+                "name": "Object_14",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "107": {
+            "link": {
+                "name": "Object_15",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "108": {
+            "link": {
+                "name": "Object_16",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "109": {
+            "link": {
+                "name": "Object_17",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "55"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "74": {
+            "link": {
+                "name": "None",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "BlocksPaper",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "76": {
+            "link": {
+                "name": "BlocksPaper_0",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "77": {
+            "link": {
+                "name": "BlocksPaper_1",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "78": {
+            "link": {
+                "name": "None_0",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "79": {
+            "link": {
+                "name": "None_1",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "lambert4SG",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "81": {
+            "link": {
+                "name": "lambert2SG",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "lambert3SG",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "None_2",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "84": {
+            "link": {
+                "name": "None_3",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "85": {
+            "link": {
+                "name": "BlocksPaper_2",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "None_4",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "hill",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "None_5",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "None_6",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "None_7",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "None_8",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "183": {
+            "name": "Sky",
+            "pipeline": "54",
+            "Sky": {
+                "texture": "185"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "farm1",
+            "version": [
+                0,
+                9,
+                5
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "rendering": {
+            "sky": {
+                "enabled": true,
+                "material": "183"
+            }
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        }
+    },
+    "textures": {
+        "66": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "texture_3",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "texture_4",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "texture_5",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "texture_6",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "texture_7",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "185": {
+            "link": {
+                "name": "skybox.jpg",
+                "file": "models\\skybox.jpg"
+            }
+        }
+    },
+    "images": {
+        "58": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "59": {
+            "link": {
+                "name": "image_1",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "image_2",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "image_3",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "image_4",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "image_5",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "image_6",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "image_7",
+                "file": "models\\low_poly_farm\\scene.gltf"
+            }
+        },
+        "184": {
+            "link": {
+                "name": "skybox.jpg",
+                "file": "models\\skybox.jpg"
+            }
+        }
+    },
+    "fonts": {
+        "55": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/low_poly_farm/scene.gltf",
+        "models/skybox.jpg"
+    ]
+}

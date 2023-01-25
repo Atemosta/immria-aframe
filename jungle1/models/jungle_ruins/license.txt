@@ -1,0 +1,11 @@
+Model Information:
+* title:	Jungle Ruins
+* source:	https://sketchfab.com/3d-models/jungle-ruins-dee4aed590314ee4903ccf4cbdcbd239
+* author:	Colin Fearing (https://sketchfab.com/colinfearing)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Jungle Ruins" (https://sketchfab.com/3d-models/jungle-ruins-dee4aed590314ee4903ccf4cbdcbd239) by Colin Fearing (https://sketchfab.com/colinfearing) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
