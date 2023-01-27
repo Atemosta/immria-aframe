@@ -1,0 +1,839 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "translation": [
+                -3.2591118,
+                -1.8515293,
+                4.2406644
+            ],
+            "rotation": [
+                0.0,
+                -0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "76": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "name": "Terrain",
+            "translation": [
+                0.0,
+                -2.9547865,
+                0.0
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scale": [
+                1.0,
+                0.9999922,
+                0.9999922
+            ]
+        },
+        "77": {
+            "link": {
+                "name": "Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "76"
+        },
+        "78": {
+            "link": {
+                "name": "Cylinder.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "79": {
+            "link": {
+                "name": "Cylinder.008_0<Cylinder.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "78"
+        },
+        "80": {
+            "link": {
+                "name": "Cube.035<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "81": {
+            "link": {
+                "name": "Cube.035_0<Cube.035<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "80"
+        },
+        "82": {
+            "link": {
+                "name": "Cylinder_Cylinder.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "83": {
+            "link": {
+                "name": "Cylinder_Cylinder.009_0<Cylinder_Cylinder.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "82"
+        },
+        "84": {
+            "link": {
+                "name": "Plane.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "85": {
+            "link": {
+                "name": "Plane.001_0<Plane.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "86": {
+            "link": {
+                "name": "Cylinder.000<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "87": {
+            "link": {
+                "name": "Cylinder.000_0<Cylinder.000<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "86"
+        },
+        "88": {
+            "link": {
+                "name": "Plane.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "89": {
+            "link": {
+                "name": "Plane.009_0<Plane.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "88"
+        },
+        "90": {
+            "link": {
+                "name": "Cylinder<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "91": {
+            "link": {
+                "name": "Cylinder_0<Cylinder<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "90"
+        },
+        "92": {
+            "link": {
+                "name": "Plane<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "93": {
+            "link": {
+                "name": "Plane_0<Plane<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "92"
+        },
+        "94": {
+            "link": {
+                "name": "Cylinder.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "95": {
+            "link": {
+                "name": "Cylinder.002_0<Cylinder.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "94"
+        },
+        "96": {
+            "link": {
+                "name": "Cylinder.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "97": {
+            "link": {
+                "name": "Cylinder.001_0<Cylinder.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "98": {
+            "link": {
+                "name": "Cylinder.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "99": {
+            "link": {
+                "name": "Cylinder.003_0<Cylinder.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "98"
+        },
+        "100": {
+            "link": {
+                "name": "Plane.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "101": {
+            "link": {
+                "name": "Plane.012_0<Plane.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "100"
+        },
+        "102": {
+            "link": {
+                "name": "Cube.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "103": {
+            "link": {
+                "name": "Cube.005_0<Cube.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "102"
+        },
+        "104": {
+            "link": {
+                "name": "Cube<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "105": {
+            "link": {
+                "name": "Cube_0<Cube<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "104"
+        },
+        "106": {
+            "link": {
+                "name": "Plane.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "77"
+        },
+        "107": {
+            "link": {
+                "name": "Plane.002_0<Plane.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            },
+            "parent": "106"
+        },
+        "108": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "type": "sun"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                1.6196963,
+                2.4837391
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "Cylinder.008_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "Cube.035_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "Cylinder_Cylinder.009_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "Plane.001_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "Cylinder.000_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "Plane.009_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "Cylinder_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "Plane_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "Cylinder.002_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "Cylinder.001_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "Cylinder.003_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "Plane.012_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "Cube.005_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "Cube_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "Plane.002_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "55"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "60": {
+            "link": {
+                "name": "Main",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "snowy1",
+            "version": [
+                0,
+                9,
+                5
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "rendering": {
+            "clearColor": [
+                0.5372549,
+                0.5372549,
+                0.5372549,
+                1.0
+            ]
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        }
+    },
+    "textures": {
+        "59": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        }
+    },
+    "images": {
+        "58": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\low_poly_winter_scene\\scene.gltf"
+            }
+        }
+    },
+    "fonts": {
+        "55": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/low_poly_winter_scene/scene.gltf"
+    ]
+}

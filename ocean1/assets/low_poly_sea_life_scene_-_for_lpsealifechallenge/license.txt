@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Sea Life scene - for LPSeaLifeChallenge
+* source:	https://sketchfab.com/3d-models/low-poly-sea-life-scene-for-lpsealifechallenge-aae77f9bea544c569fa8831a1b305150
+* author:	Karthik Naidu (https://sketchfab.com/Karthik_TS)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Sea Life scene - for LPSeaLifeChallenge" (https://sketchfab.com/3d-models/low-poly-sea-life-scene-for-lpsealifechallenge-aae77f9bea544c569fa8831a1b305150) by Karthik Naidu (https://sketchfab.com/Karthik_TS) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

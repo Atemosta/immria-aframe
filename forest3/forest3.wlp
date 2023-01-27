@@ -1,0 +1,5288 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "translation": [
+                -3.2591099,
+                1.8000135,
+                1.7569212
+            ],
+            "rotation": [
+                0.0,
+                -0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1,
+                        "type": "sun"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                3.294887,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "323": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "translation": [
+                0.0,
+                -1.3440396,
+                5.960464477539063e-8
+            ],
+            "rotation": [
+                -0.7071066,
+                0.0,
+                0.0,
+                0.7071068
+            ],
+            "scale": [
+                1.0,
+                0.9999946,
+                0.9999946
+            ],
+            "name": "Terrain"
+        },
+        "324": {
+            "link": {
+                "name": "Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "323"
+        },
+        "325": {
+            "link": {
+                "name": "Lamp<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "326": {
+            "link": {
+                "name": "Lamp<Lamp<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "325"
+        },
+        "327": {
+            "link": {
+                "name": "Cube<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "328": {
+            "link": {
+                "name": "Cube_0<Cube<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "327"
+        },
+        "329": {
+            "link": {
+                "name": "Cube_1<Cube<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "327"
+        },
+        "330": {
+            "link": {
+                "name": "Cube_2<Cube<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "327"
+        },
+        "331": {
+            "link": {
+                "name": "Cylinder<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "332": {
+            "link": {
+                "name": "Cylinder_0<Cylinder<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "331"
+        },
+        "333": {
+            "link": {
+                "name": "Icosphere<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "334": {
+            "link": {
+                "name": "Icosphere_0<Icosphere<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "333"
+        },
+        "335": {
+            "link": {
+                "name": "Icosphere.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "336": {
+            "link": {
+                "name": "Icosphere.001_0<Icosphere.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "335"
+        },
+        "337": {
+            "link": {
+                "name": "Icosphere.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "338": {
+            "link": {
+                "name": "Icosphere.002_0<Icosphere.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "337"
+        },
+        "339": {
+            "link": {
+                "name": "Icosphere.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "340": {
+            "link": {
+                "name": "Icosphere.003_0<Icosphere.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "339"
+        },
+        "341": {
+            "link": {
+                "name": "Icosphere.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "342": {
+            "link": {
+                "name": "Icosphere.004_0<Icosphere.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "341"
+        },
+        "343": {
+            "link": {
+                "name": "Icosphere.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "344": {
+            "link": {
+                "name": "Icosphere.005_0<Icosphere.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "343"
+        },
+        "345": {
+            "link": {
+                "name": "Icosphere.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "346": {
+            "link": {
+                "name": "Icosphere.006_0<Icosphere.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "345"
+        },
+        "347": {
+            "link": {
+                "name": "Icosphere.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "348": {
+            "link": {
+                "name": "Icosphere.007_0<Icosphere.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "347"
+        },
+        "349": {
+            "link": {
+                "name": "Icosphere.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "350": {
+            "link": {
+                "name": "Icosphere.008_0<Icosphere.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "349"
+        },
+        "351": {
+            "link": {
+                "name": "Icosphere.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "352": {
+            "link": {
+                "name": "Icosphere.009_0<Icosphere.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "351"
+        },
+        "353": {
+            "link": {
+                "name": "Icosphere.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "354": {
+            "link": {
+                "name": "Icosphere.010_0<Icosphere.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "353"
+        },
+        "355": {
+            "link": {
+                "name": "Icosphere.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "356": {
+            "link": {
+                "name": "Icosphere.011_0<Icosphere.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "355"
+        },
+        "357": {
+            "link": {
+                "name": "Icosphere.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "358": {
+            "link": {
+                "name": "Icosphere.012_0<Icosphere.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "357"
+        },
+        "359": {
+            "link": {
+                "name": "Icosphere.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "360": {
+            "link": {
+                "name": "Icosphere.013_0<Icosphere.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "359"
+        },
+        "361": {
+            "link": {
+                "name": "Icosphere.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "362": {
+            "link": {
+                "name": "Icosphere.014_0<Icosphere.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "361"
+        },
+        "363": {
+            "link": {
+                "name": "Icosphere.015<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "364": {
+            "link": {
+                "name": "Icosphere.015_0<Icosphere.015<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "363"
+        },
+        "365": {
+            "link": {
+                "name": "Icosphere.016<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "366": {
+            "link": {
+                "name": "Icosphere.016_0<Icosphere.016<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "365"
+        },
+        "367": {
+            "link": {
+                "name": "Icosphere.017<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "368": {
+            "link": {
+                "name": "Icosphere.017_0<Icosphere.017<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "367"
+        },
+        "369": {
+            "link": {
+                "name": "Icosphere.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "370": {
+            "link": {
+                "name": "Icosphere.018_0<Icosphere.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "369"
+        },
+        "371": {
+            "link": {
+                "name": "Icosphere.019<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "372": {
+            "link": {
+                "name": "Icosphere.019_0<Icosphere.019<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "371"
+        },
+        "373": {
+            "link": {
+                "name": "Icosphere.020<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "374": {
+            "link": {
+                "name": "Icosphere.020_0<Icosphere.020<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "373"
+        },
+        "375": {
+            "link": {
+                "name": "Icosphere.021<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "376": {
+            "link": {
+                "name": "Icosphere.021_0<Icosphere.021<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "375"
+        },
+        "377": {
+            "link": {
+                "name": "Icosphere.022<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "378": {
+            "link": {
+                "name": "Icosphere.022_0<Icosphere.022<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "377"
+        },
+        "379": {
+            "link": {
+                "name": "Icosphere.023<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "380": {
+            "link": {
+                "name": "Icosphere.023_0<Icosphere.023<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "379"
+        },
+        "381": {
+            "link": {
+                "name": "Icosphere.024<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "382": {
+            "link": {
+                "name": "Icosphere.024_0<Icosphere.024<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "381"
+        },
+        "383": {
+            "link": {
+                "name": "Icosphere.025<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "384": {
+            "link": {
+                "name": "Icosphere.025_0<Icosphere.025<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "383"
+        },
+        "385": {
+            "link": {
+                "name": "Icosphere.026<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "386": {
+            "link": {
+                "name": "Icosphere.026_0<Icosphere.026<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "385"
+        },
+        "387": {
+            "link": {
+                "name": "Cube.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "388": {
+            "link": {
+                "name": "Cube.001_0<Cube.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "387"
+        },
+        "389": {
+            "link": {
+                "name": "Cube.001_1<Cube.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "387"
+        },
+        "390": {
+            "link": {
+                "name": "NurbsPath<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "391": {
+            "link": {
+                "name": "NurbsPath_0<NurbsPath<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "390"
+        },
+        "392": {
+            "link": {
+                "name": "NurbsPath.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "393": {
+            "link": {
+                "name": "NurbsPath.001_0<NurbsPath.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "392"
+        },
+        "394": {
+            "link": {
+                "name": "Mball.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "395": {
+            "link": {
+                "name": "Mball.006_0<Mball.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "394"
+        },
+        "396": {
+            "link": {
+                "name": "Icosphere.027<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "397": {
+            "link": {
+                "name": "Icosphere.027_0<Icosphere.027<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "396"
+        },
+        "398": {
+            "link": {
+                "name": "Icosphere.028<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "399": {
+            "link": {
+                "name": "Icosphere.028_0<Icosphere.028<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "398"
+        },
+        "400": {
+            "link": {
+                "name": "Cylinder.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "401": {
+            "link": {
+                "name": "Cylinder.001_0<Cylinder.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "400"
+        },
+        "402": {
+            "link": {
+                "name": "Cylinder.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "403": {
+            "link": {
+                "name": "Cylinder.002_0<Cylinder.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "402"
+        },
+        "404": {
+            "link": {
+                "name": "Cylinder.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "405": {
+            "link": {
+                "name": "Cylinder.003_0<Cylinder.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "404"
+        },
+        "406": {
+            "link": {
+                "name": "Cylinder.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "407": {
+            "link": {
+                "name": "Cylinder.004_0<Cylinder.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "406"
+        },
+        "408": {
+            "link": {
+                "name": "Cylinder.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "409": {
+            "link": {
+                "name": "Cylinder.005_0<Cylinder.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "408"
+        },
+        "410": {
+            "link": {
+                "name": "Mball.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "411": {
+            "link": {
+                "name": "Mball.011_0<Mball.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "410"
+        },
+        "412": {
+            "link": {
+                "name": "Mball.000<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "413": {
+            "link": {
+                "name": "Mball.000_0<Mball.000<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "412"
+        },
+        "414": {
+            "link": {
+                "name": "Cylinder.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "415": {
+            "link": {
+                "name": "Cylinder.006_0<Cylinder.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "414"
+        },
+        "416": {
+            "link": {
+                "name": "Cylinder.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "417": {
+            "link": {
+                "name": "Cylinder.007_0<Cylinder.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "416"
+        },
+        "418": {
+            "link": {
+                "name": "Cylinder.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "419": {
+            "link": {
+                "name": "Cylinder.008_0<Cylinder.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "418"
+        },
+        "420": {
+            "link": {
+                "name": "Cylinder.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "421": {
+            "link": {
+                "name": "Cylinder.009_0<Cylinder.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "420"
+        },
+        "422": {
+            "link": {
+                "name": "Cylinder.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "423": {
+            "link": {
+                "name": "Cylinder.010_0<Cylinder.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "422"
+        },
+        "424": {
+            "link": {
+                "name": "Cylinder.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "425": {
+            "link": {
+                "name": "Cylinder.011_0<Cylinder.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "424"
+        },
+        "426": {
+            "link": {
+                "name": "Cylinder.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "427": {
+            "link": {
+                "name": "Cylinder.012_0<Cylinder.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "426"
+        },
+        "428": {
+            "link": {
+                "name": "Cylinder.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "429": {
+            "link": {
+                "name": "Cylinder.013_0<Cylinder.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "428"
+        },
+        "430": {
+            "link": {
+                "name": "Mball.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "431": {
+            "link": {
+                "name": "Mball.010_0<Mball.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "430"
+        },
+        "432": {
+            "link": {
+                "name": "Icosphere.029<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "433": {
+            "link": {
+                "name": "Icosphere.029_0<Icosphere.029<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "432"
+        },
+        "434": {
+            "link": {
+                "name": "NurbsPath.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "435": {
+            "link": {
+                "name": "NurbsPath.004_0<NurbsPath.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "434"
+        },
+        "436": {
+            "link": {
+                "name": "NurbsPath.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "437": {
+            "link": {
+                "name": "NurbsPath.005_0<NurbsPath.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "436"
+        },
+        "438": {
+            "link": {
+                "name": "Circle<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "439": {
+            "link": {
+                "name": "Circle_0<Circle<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "438"
+        },
+        "440": {
+            "link": {
+                "name": "Mball.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "441": {
+            "link": {
+                "name": "Mball.018_0<Mball.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "440"
+        },
+        "442": {
+            "link": {
+                "name": "Cube.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "443": {
+            "link": {
+                "name": "Cube.002_0<Cube.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "442"
+        },
+        "444": {
+            "link": {
+                "name": "Cube.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "445": {
+            "link": {
+                "name": "Cube.004_0<Cube.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "444"
+        },
+        "446": {
+            "link": {
+                "name": "Cube.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "447": {
+            "link": {
+                "name": "Cube.003_0<Cube.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "446"
+        },
+        "448": {
+            "link": {
+                "name": "Cube.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "449": {
+            "link": {
+                "name": "Cube.005_0<Cube.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "448"
+        },
+        "450": {
+            "link": {
+                "name": "Cube.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "451": {
+            "link": {
+                "name": "Cube.006_0<Cube.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "450"
+        },
+        "452": {
+            "link": {
+                "name": "Cube.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "453": {
+            "link": {
+                "name": "Cube.007_0<Cube.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "452"
+        },
+        "454": {
+            "link": {
+                "name": "Cube.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "455": {
+            "link": {
+                "name": "Cube.009_0<Cube.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "454"
+        },
+        "456": {
+            "link": {
+                "name": "Cube.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "457": {
+            "link": {
+                "name": "Cube.010_0<Cube.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "456"
+        },
+        "458": {
+            "link": {
+                "name": "Cube.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "459": {
+            "link": {
+                "name": "Cube.012_0<Cube.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "458"
+        },
+        "460": {
+            "link": {
+                "name": "Cube.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "461": {
+            "link": {
+                "name": "Cube.013_0<Cube.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "460"
+        },
+        "462": {
+            "link": {
+                "name": "Cube.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "463": {
+            "link": {
+                "name": "Cube.014_0<Cube.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "462"
+        },
+        "464": {
+            "link": {
+                "name": "Cube.019<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "465": {
+            "link": {
+                "name": "Cube.019_0<Cube.019<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "464"
+        },
+        "466": {
+            "link": {
+                "name": "Cube.021<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "467": {
+            "link": {
+                "name": "Cube.021_0<Cube.021<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "466"
+        },
+        "468": {
+            "link": {
+                "name": "Cube.022<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "469": {
+            "link": {
+                "name": "Cube.022_0<Cube.022<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "468"
+        },
+        "470": {
+            "link": {
+                "name": "Cube.024<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "471": {
+            "link": {
+                "name": "Cube.024_0<Cube.024<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "470"
+        },
+        "472": {
+            "link": {
+                "name": "Cube.025<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "473": {
+            "link": {
+                "name": "Cube.025_0<Cube.025<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "472"
+        },
+        "474": {
+            "link": {
+                "name": "Cube.032<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "475": {
+            "link": {
+                "name": "Cube.032_0<Cube.032<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "474"
+        },
+        "476": {
+            "link": {
+                "name": "Cube.035<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "477": {
+            "link": {
+                "name": "Cube.035_0<Cube.035<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "476"
+        },
+        "478": {
+            "link": {
+                "name": "Cube.015<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "479": {
+            "link": {
+                "name": "Cube.015_0<Cube.015<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "478"
+        },
+        "480": {
+            "link": {
+                "name": "Cube.016<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "481": {
+            "link": {
+                "name": "Cube.016_0<Cube.016<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "480"
+        },
+        "482": {
+            "link": {
+                "name": "Cube.017<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "483": {
+            "link": {
+                "name": "Cube.017_0<Cube.017<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "482"
+        },
+        "484": {
+            "link": {
+                "name": "Cube.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "485": {
+            "link": {
+                "name": "Cube.018_0<Cube.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "484"
+        },
+        "486": {
+            "link": {
+                "name": "Cube.020<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "487": {
+            "link": {
+                "name": "Cube.020_0<Cube.020<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "486"
+        },
+        "488": {
+            "link": {
+                "name": "Cube.026<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "489": {
+            "link": {
+                "name": "Cube.026_0<Cube.026<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "488"
+        },
+        "490": {
+            "link": {
+                "name": "Cube.027<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "491": {
+            "link": {
+                "name": "Cube.027_0<Cube.027<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "490"
+        },
+        "492": {
+            "link": {
+                "name": "Cube.029<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "493": {
+            "link": {
+                "name": "Cube.029_0<Cube.029<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "492"
+        },
+        "494": {
+            "link": {
+                "name": "Cube.030<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "495": {
+            "link": {
+                "name": "Cube.030_0<Cube.030<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "494"
+        },
+        "496": {
+            "link": {
+                "name": "Icosphere.030<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "497": {
+            "link": {
+                "name": "Icosphere.030_0<Icosphere.030<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "496"
+        },
+        "498": {
+            "link": {
+                "name": "Cube.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "499": {
+            "link": {
+                "name": "Cube.011_0<Cube.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "498"
+        },
+        "500": {
+            "link": {
+                "name": "Cube.023<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "501": {
+            "link": {
+                "name": "Cube.023_0<Cube.023<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "500"
+        },
+        "502": {
+            "link": {
+                "name": "Cube.028<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "503": {
+            "link": {
+                "name": "Cube.028_0<Cube.028<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "502"
+        },
+        "504": {
+            "link": {
+                "name": "Cube.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "505": {
+            "link": {
+                "name": "Cube.031_0<Cube.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "504"
+        },
+        "506": {
+            "link": {
+                "name": "Cube.033<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "507": {
+            "link": {
+                "name": "Cube.033_0<Cube.033<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "506"
+        },
+        "508": {
+            "link": {
+                "name": "Cube.034<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "509": {
+            "link": {
+                "name": "Cube.034_0<Cube.034<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "508"
+        },
+        "510": {
+            "link": {
+                "name": "Cube.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "511": {
+            "link": {
+                "name": "Cube.036_0<Cube.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "510"
+        },
+        "512": {
+            "link": {
+                "name": "Cube.037<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "513": {
+            "link": {
+                "name": "Cube.037_0<Cube.037<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "512"
+        },
+        "514": {
+            "link": {
+                "name": "Cube.039<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "515": {
+            "link": {
+                "name": "Cube.039_0<Cube.039<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "514"
+        },
+        "516": {
+            "link": {
+                "name": "Cube.038<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "517": {
+            "link": {
+                "name": "Cube.038_0<Cube.038<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "516"
+        },
+        "518": {
+            "link": {
+                "name": "Cube.040<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "519": {
+            "link": {
+                "name": "Cube.040_0<Cube.040<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "518"
+        },
+        "520": {
+            "link": {
+                "name": "Cube.041<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "521": {
+            "link": {
+                "name": "Cube.041_0<Cube.041<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "520"
+        },
+        "522": {
+            "link": {
+                "name": "Cube.042<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "523": {
+            "link": {
+                "name": "Cube.042_0<Cube.042<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "522"
+        },
+        "524": {
+            "link": {
+                "name": "Cube.043<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "525": {
+            "link": {
+                "name": "Cube.043_0<Cube.043<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "524"
+        },
+        "526": {
+            "link": {
+                "name": "Cube.044<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "527": {
+            "link": {
+                "name": "Cube.044_0<Cube.044<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "526"
+        },
+        "528": {
+            "link": {
+                "name": "Cube.045<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "529": {
+            "link": {
+                "name": "Cube.045_0<Cube.045<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "528"
+        },
+        "530": {
+            "link": {
+                "name": "Cube.046<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "531": {
+            "link": {
+                "name": "Cube.046_0<Cube.046<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "530"
+        },
+        "532": {
+            "link": {
+                "name": "Cube.047<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "533": {
+            "link": {
+                "name": "Cube.047_0<Cube.047<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "532"
+        },
+        "534": {
+            "link": {
+                "name": "Cube.048<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "535": {
+            "link": {
+                "name": "Cube.048_0<Cube.048<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "534"
+        },
+        "536": {
+            "link": {
+                "name": "Cube.049<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "537": {
+            "link": {
+                "name": "Cube.049_0<Cube.049<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "536"
+        },
+        "538": {
+            "link": {
+                "name": "Cube.050<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "539": {
+            "link": {
+                "name": "Cube.050_0<Cube.050<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "538"
+        },
+        "540": {
+            "link": {
+                "name": "Cube.051<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "541": {
+            "link": {
+                "name": "Cube.051_0<Cube.051<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "540"
+        },
+        "542": {
+            "link": {
+                "name": "Cube.052<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "543": {
+            "link": {
+                "name": "Cube.052_0<Cube.052<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "542"
+        },
+        "544": {
+            "link": {
+                "name": "Cube.053<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "545": {
+            "link": {
+                "name": "Cube.053_0<Cube.053<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "544"
+        },
+        "546": {
+            "link": {
+                "name": "Cube.054<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "547": {
+            "link": {
+                "name": "Cube.054_0<Cube.054<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "546"
+        },
+        "548": {
+            "link": {
+                "name": "Cube.055<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "549": {
+            "link": {
+                "name": "Cube.055_0<Cube.055<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "548"
+        },
+        "550": {
+            "link": {
+                "name": "Cube.056<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "551": {
+            "link": {
+                "name": "Cube.056_0<Cube.056<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "550"
+        },
+        "552": {
+            "link": {
+                "name": "Cube.057<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "553": {
+            "link": {
+                "name": "Cube.057_0<Cube.057<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "552"
+        },
+        "554": {
+            "link": {
+                "name": "LanternLargeStem<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "555": {
+            "link": {
+                "name": "LanternLargeStem_0<LanternLargeStem<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "554"
+        },
+        "556": {
+            "link": {
+                "name": "LaternHang<LanternLargeStem<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "554"
+        },
+        "557": {
+            "link": {
+                "name": "LaternHang_0<LaternHang<LanternLargeStem<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "556"
+        },
+        "558": {
+            "link": {
+                "name": "Cube.058<LaternHang<LanternLargeStem<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "556"
+        },
+        "559": {
+            "link": {
+                "name": "Cube.058_0<Cube.058<LaternHang<LanternLargeStem<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "558"
+        },
+        "560": {
+            "link": {
+                "name": "Empty<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "561": {
+            "link": {
+                "name": "LanternGlass<Empty<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "560"
+        },
+        "562": {
+            "link": {
+                "name": "LanternGlass_0<LanternGlass<Empty<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "561"
+        },
+        "563": {
+            "link": {
+                "name": "Lantern<Empty<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "560"
+        },
+        "564": {
+            "link": {
+                "name": "Lantern_0<Lantern<Empty<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "563"
+        },
+        "565": {
+            "link": {
+                "name": "LanternHold<Empty<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "560"
+        },
+        "566": {
+            "link": {
+                "name": "LanternHold_0<LanternHold<Empty<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "565"
+        },
+        "567": {
+            "link": {
+                "name": "Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "568": {
+            "link": {
+                "name": "Icosphere.031_0<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "567"
+        },
+        "569": {
+            "link": {
+                "name": "Icosphere.048<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "567"
+        },
+        "570": {
+            "link": {
+                "name": "Icosphere.048_0<Icosphere.048<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "569"
+        },
+        "571": {
+            "link": {
+                "name": "Icosphere.035<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "567"
+        },
+        "572": {
+            "link": {
+                "name": "Icosphere.035_0<Icosphere.035<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "571"
+        },
+        "573": {
+            "link": {
+                "name": "Icosphere.034<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "567"
+        },
+        "574": {
+            "link": {
+                "name": "Icosphere.034_0<Icosphere.034<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "573"
+        },
+        "575": {
+            "link": {
+                "name": "Icosphere.033<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "567"
+        },
+        "576": {
+            "link": {
+                "name": "Icosphere.033_0<Icosphere.033<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "575"
+        },
+        "577": {
+            "link": {
+                "name": "Icosphere.032<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "567"
+        },
+        "578": {
+            "link": {
+                "name": "Icosphere.032_0<Icosphere.032<Icosphere.031<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "577"
+        },
+        "579": {
+            "link": {
+                "name": "Icosphere.041<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "580": {
+            "link": {
+                "name": "Icosphere.041_0<Icosphere.041<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "579"
+        },
+        "581": {
+            "link": {
+                "name": "Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "582": {
+            "link": {
+                "name": "Icosphere.036_0<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "581"
+        },
+        "583": {
+            "link": {
+                "name": "Icosphere.040<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "581"
+        },
+        "584": {
+            "link": {
+                "name": "Icosphere.040_0<Icosphere.040<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "583"
+        },
+        "585": {
+            "link": {
+                "name": "Icosphere.039<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "581"
+        },
+        "586": {
+            "link": {
+                "name": "Icosphere.039_0<Icosphere.039<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "585"
+        },
+        "587": {
+            "link": {
+                "name": "Icosphere.038<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "581"
+        },
+        "588": {
+            "link": {
+                "name": "Icosphere.038_0<Icosphere.038<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "587"
+        },
+        "589": {
+            "link": {
+                "name": "Icosphere.037<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "581"
+        },
+        "590": {
+            "link": {
+                "name": "Icosphere.037_0<Icosphere.037<Icosphere.036<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "589"
+        },
+        "591": {
+            "link": {
+                "name": "Icosphere.043<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "592": {
+            "link": {
+                "name": "Icosphere.043_0<Icosphere.043<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "591"
+        },
+        "593": {
+            "link": {
+                "name": "Icosphere.044<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "594": {
+            "link": {
+                "name": "Icosphere.044_0<Icosphere.044<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "593"
+        },
+        "595": {
+            "link": {
+                "name": "Icosphere.042<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "596": {
+            "link": {
+                "name": "Icosphere.042_0<Icosphere.042<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "595"
+        },
+        "597": {
+            "link": {
+                "name": "Icosphere.045<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "598": {
+            "link": {
+                "name": "Icosphere.045_0<Icosphere.045<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "597"
+        },
+        "599": {
+            "link": {
+                "name": "Cube.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "600": {
+            "link": {
+                "name": "Cube.008_0<Cube.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "599"
+        },
+        "601": {
+            "link": {
+                "name": "Icosphere.047<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "602": {
+            "link": {
+                "name": "Icosphere.047_0<Icosphere.047<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "601"
+        },
+        "603": {
+            "link": {
+                "name": "DirtPile<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "604": {
+            "link": {
+                "name": "DirtPile_0<DirtPile<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "603"
+        },
+        "605": {
+            "link": {
+                "name": "Icosphere.049<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "606": {
+            "link": {
+                "name": "Icosphere.049_0<Icosphere.049<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "605"
+        },
+        "607": {
+            "link": {
+                "name": "Icosphere.050<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "608": {
+            "link": {
+                "name": "Icosphere.050_0<Icosphere.050<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "607"
+        },
+        "609": {
+            "link": {
+                "name": "NurbsPath.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "610": {
+            "link": {
+                "name": "NurbsPath.008_0<NurbsPath.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "609"
+        },
+        "611": {
+            "link": {
+                "name": "NurbsPath.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "612": {
+            "link": {
+                "name": "NurbsPath.009_0<NurbsPath.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "611"
+        },
+        "613": {
+            "link": {
+                "name": "NurbsPath.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "614": {
+            "link": {
+                "name": "NurbsPath.010_0<NurbsPath.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "613"
+        },
+        "615": {
+            "link": {
+                "name": "NurbsPath.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "616": {
+            "link": {
+                "name": "NurbsPath.011_0<NurbsPath.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "615"
+        },
+        "617": {
+            "link": {
+                "name": "NurbsPath.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "618": {
+            "link": {
+                "name": "NurbsPath.012_0<NurbsPath.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "617"
+        },
+        "619": {
+            "link": {
+                "name": "NurbsPath.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "620": {
+            "link": {
+                "name": "NurbsPath.013_0<NurbsPath.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "619"
+        },
+        "621": {
+            "link": {
+                "name": "NurbsPath.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "622": {
+            "link": {
+                "name": "NurbsPath.014_0<NurbsPath.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "621"
+        },
+        "623": {
+            "link": {
+                "name": "LanternLargeStem.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "624": {
+            "link": {
+                "name": "LanternLargeStem.001_0<LanternLargeStem.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "623"
+        },
+        "625": {
+            "link": {
+                "name": "LanternLargeStem.001_1<LanternLargeStem.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "623"
+        },
+        "626": {
+            "link": {
+                "name": "Rope<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "627": {
+            "link": {
+                "name": "Rope_0<Rope<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "626"
+        },
+        "628": {
+            "link": {
+                "name": "Cylinder.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "629": {
+            "link": {
+                "name": "Cylinder.014_0<Cylinder.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "628"
+        },
+        "630": {
+            "link": {
+                "name": "Cube.059<Cylinder.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "628"
+        },
+        "631": {
+            "link": {
+                "name": "Cube.059_0<Cube.059<Cylinder.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "630"
+        },
+        "632": {
+            "link": {
+                "name": "DirtPile.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "633": {
+            "link": {
+                "name": "DirtPile.002_0<DirtPile.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "632"
+        },
+        "634": {
+            "link": {
+                "name": "DirtPile.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "635": {
+            "link": {
+                "name": "DirtPile.001_0<DirtPile.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "634"
+        },
+        "636": {
+            "link": {
+                "name": "Icosphere.051<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "637": {
+            "link": {
+                "name": "Icosphere.051_0<Icosphere.051<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "636"
+        },
+        "638": {
+            "link": {
+                "name": "Icosphere.052<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "639": {
+            "link": {
+                "name": "Icosphere.052_0<Icosphere.052<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "638"
+        },
+        "640": {
+            "link": {
+                "name": "Icosphere.053<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "641": {
+            "link": {
+                "name": "Icosphere.053_0<Icosphere.053<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "640"
+        },
+        "642": {
+            "link": {
+                "name": "Icosphere.054<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "643": {
+            "link": {
+                "name": "Icosphere.054_0<Icosphere.054<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "642"
+        },
+        "644": {
+            "link": {
+                "name": "Icosphere.055<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "645": {
+            "link": {
+                "name": "Icosphere.055_0<Icosphere.055<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "644"
+        },
+        "646": {
+            "link": {
+                "name": "Flower<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "647": {
+            "link": {
+                "name": "Flower_0<Flower<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "646"
+        },
+        "648": {
+            "link": {
+                "name": "Flower_1<Flower<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "646"
+        },
+        "649": {
+            "link": {
+                "name": "Flower_2<Flower<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "646"
+        },
+        "650": {
+            "link": {
+                "name": "Flower.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "651": {
+            "link": {
+                "name": "Flower.001_0<Flower.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "650"
+        },
+        "652": {
+            "link": {
+                "name": "Flower.001_1<Flower.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "650"
+        },
+        "653": {
+            "link": {
+                "name": "Flower.001_2<Flower.001<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "650"
+        },
+        "654": {
+            "link": {
+                "name": "Flower.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "655": {
+            "link": {
+                "name": "Flower.002_0<Flower.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "654"
+        },
+        "656": {
+            "link": {
+                "name": "Flower.002_1<Flower.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "654"
+        },
+        "657": {
+            "link": {
+                "name": "Flower.002_2<Flower.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "654"
+        },
+        "658": {
+            "link": {
+                "name": "Flower.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "659": {
+            "link": {
+                "name": "Flower.003_0<Flower.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "658"
+        },
+        "660": {
+            "link": {
+                "name": "Flower.003_1<Flower.003<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "658"
+        },
+        "661": {
+            "link": {
+                "name": "Flower.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "662": {
+            "link": {
+                "name": "Flower.004_0<Flower.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "661"
+        },
+        "663": {
+            "link": {
+                "name": "Flower.004_1<Flower.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "661"
+        },
+        "664": {
+            "link": {
+                "name": "Flower.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "665": {
+            "link": {
+                "name": "Flower.005_0<Flower.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "664"
+        },
+        "666": {
+            "link": {
+                "name": "Flower.005_1<Flower.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "664"
+        },
+        "667": {
+            "link": {
+                "name": "Flower.005_2<Flower.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "664"
+        },
+        "668": {
+            "link": {
+                "name": "Flower.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "669": {
+            "link": {
+                "name": "Flower.006_0<Flower.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "668"
+        },
+        "670": {
+            "link": {
+                "name": "Flower.006_1<Flower.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "668"
+        },
+        "671": {
+            "link": {
+                "name": "Flower.006_2<Flower.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "668"
+        },
+        "672": {
+            "link": {
+                "name": "Flower.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "673": {
+            "link": {
+                "name": "Flower.007_0<Flower.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "672"
+        },
+        "674": {
+            "link": {
+                "name": "Flower.007_1<Flower.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "672"
+        },
+        "675": {
+            "link": {
+                "name": "Flower.007_2<Flower.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "672"
+        },
+        "676": {
+            "link": {
+                "name": "Flower.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "677": {
+            "link": {
+                "name": "Flower.008_0<Flower.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "676"
+        },
+        "678": {
+            "link": {
+                "name": "Flower.008_1<Flower.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "676"
+        },
+        "679": {
+            "link": {
+                "name": "Flower.008_2<Flower.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "676"
+        },
+        "680": {
+            "link": {
+                "name": "Flower.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "681": {
+            "link": {
+                "name": "Flower.009_0<Flower.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "680"
+        },
+        "682": {
+            "link": {
+                "name": "Flower.009_1<Flower.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "680"
+        },
+        "683": {
+            "link": {
+                "name": "Cube.060<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "684": {
+            "link": {
+                "name": "Cube.060_0<Cube.060<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "683"
+        },
+        "685": {
+            "link": {
+                "name": "Icosphere.046<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "686": {
+            "link": {
+                "name": "Icosphere.046_0<Icosphere.046<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "685"
+        },
+        "687": {
+            "link": {
+                "name": "Flower.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "688": {
+            "link": {
+                "name": "Flower.010_0<Flower.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "687"
+        },
+        "689": {
+            "link": {
+                "name": "Flower.010_1<Flower.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "687"
+        },
+        "690": {
+            "link": {
+                "name": "Cube.061<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "691": {
+            "link": {
+                "name": "Cube.061_0<Cube.061<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "690"
+        },
+        "692": {
+            "link": {
+                "name": "Flower.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "693": {
+            "link": {
+                "name": "Flower.011_0<Flower.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "692"
+        },
+        "694": {
+            "link": {
+                "name": "Flower.011_1<Flower.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "692"
+        },
+        "695": {
+            "link": {
+                "name": "Cube.062<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "696": {
+            "link": {
+                "name": "Cube.062_0<Cube.062<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "695"
+        },
+        "697": {
+            "link": {
+                "name": "Flower.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "698": {
+            "link": {
+                "name": "Flower.012_0<Flower.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "697"
+        },
+        "699": {
+            "link": {
+                "name": "Flower.012_1<Flower.012<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "697"
+        },
+        "700": {
+            "link": {
+                "name": "Flower.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "701": {
+            "link": {
+                "name": "Flower.013_0<Flower.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "700"
+        },
+        "702": {
+            "link": {
+                "name": "Flower.013_1<Flower.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "700"
+        },
+        "703": {
+            "link": {
+                "name": "Flower.013_2<Flower.013<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "700"
+        },
+        "704": {
+            "link": {
+                "name": "Flower.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "705": {
+            "link": {
+                "name": "Flower.014_0<Flower.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "704"
+        },
+        "706": {
+            "link": {
+                "name": "Flower.014_1<Flower.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "704"
+        },
+        "707": {
+            "link": {
+                "name": "Flower.014_2<Flower.014<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "704"
+        },
+        "708": {
+            "link": {
+                "name": "Flower.015<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "709": {
+            "link": {
+                "name": "Flower.015_0<Flower.015<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "708"
+        },
+        "710": {
+            "link": {
+                "name": "Flower.015_1<Flower.015<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "708"
+        },
+        "711": {
+            "link": {
+                "name": "Flower.015_2<Flower.015<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "708"
+        },
+        "712": {
+            "link": {
+                "name": "Flower.016<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "713": {
+            "link": {
+                "name": "Flower.016_0<Flower.016<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "712"
+        },
+        "714": {
+            "link": {
+                "name": "Flower.016_1<Flower.016<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "712"
+        },
+        "715": {
+            "link": {
+                "name": "Flower.016_2<Flower.016<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "712"
+        },
+        "716": {
+            "link": {
+                "name": "Flower.017<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "717": {
+            "link": {
+                "name": "Flower.017_0<Flower.017<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "716"
+        },
+        "718": {
+            "link": {
+                "name": "Flower.017_1<Flower.017<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "716"
+        },
+        "719": {
+            "link": {
+                "name": "Flower.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "720": {
+            "link": {
+                "name": "Flower.018_0<Flower.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "719"
+        },
+        "721": {
+            "link": {
+                "name": "Flower.018_1<Flower.018<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "719"
+        },
+        "722": {
+            "link": {
+                "name": "Flower.019<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "723": {
+            "link": {
+                "name": "Flower.019_0<Flower.019<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "722"
+        },
+        "724": {
+            "link": {
+                "name": "Flower.019_1<Flower.019<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "722"
+        },
+        "725": {
+            "link": {
+                "name": "Flower.019_2<Flower.019<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "722"
+        },
+        "726": {
+            "link": {
+                "name": "Flower.020<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "727": {
+            "link": {
+                "name": "Flower.020_0<Flower.020<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "726"
+        },
+        "728": {
+            "link": {
+                "name": "Flower.020_1<Flower.020<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "726"
+        },
+        "729": {
+            "link": {
+                "name": "Flower.020_2<Flower.020<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "726"
+        },
+        "730": {
+            "link": {
+                "name": "Flower.021<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "731": {
+            "link": {
+                "name": "Flower.021_0<Flower.021<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "730"
+        },
+        "732": {
+            "link": {
+                "name": "Flower.021_1<Flower.021<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "730"
+        },
+        "733": {
+            "link": {
+                "name": "Flower.021_2<Flower.021<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "730"
+        },
+        "734": {
+            "link": {
+                "name": "Flower.022<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "735": {
+            "link": {
+                "name": "Flower.022_0<Flower.022<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "734"
+        },
+        "736": {
+            "link": {
+                "name": "Flower.022_1<Flower.022<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "734"
+        },
+        "737": {
+            "link": {
+                "name": "Flower.022_2<Flower.022<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "734"
+        },
+        "738": {
+            "link": {
+                "name": "Flower.023<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "739": {
+            "link": {
+                "name": "Flower.023_0<Flower.023<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "738"
+        },
+        "740": {
+            "link": {
+                "name": "Flower.023_1<Flower.023<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "738"
+        },
+        "741": {
+            "link": {
+                "name": "Cube.063<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "742": {
+            "link": {
+                "name": "Cube.063_0<Cube.063<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "741"
+        },
+        "743": {
+            "link": {
+                "name": "Flower.024<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "744": {
+            "link": {
+                "name": "Flower.024_0<Flower.024<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "743"
+        },
+        "745": {
+            "link": {
+                "name": "Flower.024_1<Flower.024<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "743"
+        },
+        "746": {
+            "link": {
+                "name": "Circle.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "747": {
+            "link": {
+                "name": "Circle.002_0<Circle.002<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "746"
+        },
+        "748": {
+            "link": {
+                "name": "Circle.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "749": {
+            "link": {
+                "name": "Circle.004_0<Circle.004<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "748"
+        },
+        "750": {
+            "link": {
+                "name": "Circle.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "751": {
+            "link": {
+                "name": "Circle.005_0<Circle.005<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "750"
+        },
+        "752": {
+            "link": {
+                "name": "Circle.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "753": {
+            "link": {
+                "name": "Circle.006_0<Circle.006<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "752"
+        },
+        "754": {
+            "link": {
+                "name": "Circle.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "755": {
+            "link": {
+                "name": "Circle.007_0<Circle.007<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "754"
+        },
+        "756": {
+            "link": {
+                "name": "Circle.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "757": {
+            "link": {
+                "name": "Circle.008_0<Circle.008<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "756"
+        },
+        "758": {
+            "link": {
+                "name": "Circle.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "759": {
+            "link": {
+                "name": "Circle.009_0<Circle.009<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "758"
+        },
+        "760": {
+            "link": {
+                "name": "Circle.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "761": {
+            "link": {
+                "name": "Circle.010_0<Circle.010<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "760"
+        },
+        "762": {
+            "link": {
+                "name": "Circle.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "763": {
+            "link": {
+                "name": "Circle.011_0<Circle.011<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "762"
+        },
+        "764": {
+            "link": {
+                "name": "Cube.064<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "765": {
+            "link": {
+                "name": "Cube.064_0<Cube.064<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "764"
+        },
+        "766": {
+            "link": {
+                "name": "Cube.065<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "767": {
+            "link": {
+                "name": "Cube.065_0<Cube.065<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "766"
+        },
+        "768": {
+            "link": {
+                "name": "Cube.066<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "769": {
+            "link": {
+                "name": "Cube.066_0<Cube.066<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "768"
+        },
+        "770": {
+            "link": {
+                "name": "Cube.067<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "324"
+        },
+        "771": {
+            "link": {
+                "name": "Cube.067_0<Cube.067<Root<Sketchfab_model",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            },
+            "parent": "770"
+        },
+        "772": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1,
+                        "type": "point"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                3.294887,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": null
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "79": {
+            "link": {
+                "name": "Cube_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "Cube_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "81": {
+            "link": {
+                "name": "Cube_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "Cylinder_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "Icosphere_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "84": {
+            "link": {
+                "name": "Icosphere.001_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "85": {
+            "link": {
+                "name": "Icosphere.002_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "Icosphere.003_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "Icosphere.004_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "Icosphere.005_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "Icosphere.006_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "Icosphere.007_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "Icosphere.008_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "Icosphere.009_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "Icosphere.010_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "Icosphere.011_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "95": {
+            "link": {
+                "name": "Icosphere.012_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "96": {
+            "link": {
+                "name": "Icosphere.013_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "97": {
+            "link": {
+                "name": "Icosphere.014_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "98": {
+            "link": {
+                "name": "Icosphere.015_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "99": {
+            "link": {
+                "name": "Icosphere.016_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "100": {
+            "link": {
+                "name": "Icosphere.017_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "101": {
+            "link": {
+                "name": "Icosphere.018_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "102": {
+            "link": {
+                "name": "Icosphere.019_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "103": {
+            "link": {
+                "name": "Icosphere.020_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "104": {
+            "link": {
+                "name": "Icosphere.021_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "105": {
+            "link": {
+                "name": "Icosphere.022_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "106": {
+            "link": {
+                "name": "Icosphere.023_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "107": {
+            "link": {
+                "name": "Icosphere.024_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "108": {
+            "link": {
+                "name": "Icosphere.025_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "109": {
+            "link": {
+                "name": "Icosphere.026_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "110": {
+            "link": {
+                "name": "Cube.001_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "111": {
+            "link": {
+                "name": "Cube.001_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "112": {
+            "link": {
+                "name": "NurbsPath_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "113": {
+            "link": {
+                "name": "NurbsPath.001_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "114": {
+            "link": {
+                "name": "Mball.006_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "115": {
+            "link": {
+                "name": "Icosphere.027_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "116": {
+            "link": {
+                "name": "Icosphere.028_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "117": {
+            "link": {
+                "name": "Cylinder.001_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "118": {
+            "link": {
+                "name": "Cylinder.002_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "119": {
+            "link": {
+                "name": "Cylinder.003_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "120": {
+            "link": {
+                "name": "Cylinder.004_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "121": {
+            "link": {
+                "name": "Cylinder.005_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "122": {
+            "link": {
+                "name": "Mball.011_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "123": {
+            "link": {
+                "name": "Mball.000_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "124": {
+            "link": {
+                "name": "Cylinder.006_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "125": {
+            "link": {
+                "name": "Cylinder.007_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "126": {
+            "link": {
+                "name": "Cylinder.008_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "127": {
+            "link": {
+                "name": "Cylinder.009_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "128": {
+            "link": {
+                "name": "Cylinder.010_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "129": {
+            "link": {
+                "name": "Cylinder.011_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "130": {
+            "link": {
+                "name": "Cylinder.012_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "131": {
+            "link": {
+                "name": "Cylinder.013_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "132": {
+            "link": {
+                "name": "Mball.010_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "133": {
+            "link": {
+                "name": "Icosphere.029_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "134": {
+            "link": {
+                "name": "NurbsPath.004_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "135": {
+            "link": {
+                "name": "NurbsPath.005_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "136": {
+            "link": {
+                "name": "Circle_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "137": {
+            "link": {
+                "name": "Mball.018_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "138": {
+            "link": {
+                "name": "Cube.002_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "139": {
+            "link": {
+                "name": "Cube.004_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "140": {
+            "link": {
+                "name": "Cube.003_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "141": {
+            "link": {
+                "name": "Cube.005_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "142": {
+            "link": {
+                "name": "Cube.006_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "143": {
+            "link": {
+                "name": "Cube.007_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "144": {
+            "link": {
+                "name": "Cube.009_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "145": {
+            "link": {
+                "name": "Cube.010_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "146": {
+            "link": {
+                "name": "Cube.012_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "147": {
+            "link": {
+                "name": "Cube.013_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "148": {
+            "link": {
+                "name": "Cube.014_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "149": {
+            "link": {
+                "name": "Cube.019_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "150": {
+            "link": {
+                "name": "Cube.021_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "151": {
+            "link": {
+                "name": "Cube.022_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "152": {
+            "link": {
+                "name": "Cube.024_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "153": {
+            "link": {
+                "name": "Cube.025_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "154": {
+            "link": {
+                "name": "Cube.032_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "155": {
+            "link": {
+                "name": "Cube.035_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "156": {
+            "link": {
+                "name": "Cube.015_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "157": {
+            "link": {
+                "name": "Cube.016_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "158": {
+            "link": {
+                "name": "Cube.017_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "159": {
+            "link": {
+                "name": "Cube.018_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "160": {
+            "link": {
+                "name": "Cube.020_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "161": {
+            "link": {
+                "name": "Cube.026_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "162": {
+            "link": {
+                "name": "Cube.027_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "163": {
+            "link": {
+                "name": "Cube.029_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "164": {
+            "link": {
+                "name": "Cube.030_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "165": {
+            "link": {
+                "name": "Icosphere.030_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "166": {
+            "link": {
+                "name": "Cube.011_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "167": {
+            "link": {
+                "name": "Cube.023_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "168": {
+            "link": {
+                "name": "Cube.028_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "169": {
+            "link": {
+                "name": "Cube.031_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "170": {
+            "link": {
+                "name": "Cube.033_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "171": {
+            "link": {
+                "name": "Cube.034_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "172": {
+            "link": {
+                "name": "Cube.036_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "173": {
+            "link": {
+                "name": "Cube.037_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "174": {
+            "link": {
+                "name": "Cube.039_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "175": {
+            "link": {
+                "name": "Cube.038_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "176": {
+            "link": {
+                "name": "Cube.040_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "177": {
+            "link": {
+                "name": "Cube.041_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "178": {
+            "link": {
+                "name": "Cube.042_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "179": {
+            "link": {
+                "name": "Cube.043_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "180": {
+            "link": {
+                "name": "Cube.044_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "181": {
+            "link": {
+                "name": "Cube.045_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "182": {
+            "link": {
+                "name": "Cube.046_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "183": {
+            "link": {
+                "name": "Cube.047_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "184": {
+            "link": {
+                "name": "Cube.048_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "185": {
+            "link": {
+                "name": "Cube.049_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "186": {
+            "link": {
+                "name": "Cube.050_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "187": {
+            "link": {
+                "name": "Cube.051_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "188": {
+            "link": {
+                "name": "Cube.052_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "189": {
+            "link": {
+                "name": "Cube.053_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "190": {
+            "link": {
+                "name": "Cube.054_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "191": {
+            "link": {
+                "name": "Cube.055_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "192": {
+            "link": {
+                "name": "Cube.056_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "193": {
+            "link": {
+                "name": "Cube.057_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "194": {
+            "link": {
+                "name": "LanternLargeStem_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "195": {
+            "link": {
+                "name": "LaternHang_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "196": {
+            "link": {
+                "name": "Cube.058_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "197": {
+            "link": {
+                "name": "LanternGlass_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "198": {
+            "link": {
+                "name": "Lantern_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "199": {
+            "link": {
+                "name": "LanternHold_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "200": {
+            "link": {
+                "name": "Icosphere.031_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "201": {
+            "link": {
+                "name": "Icosphere.048_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "202": {
+            "link": {
+                "name": "Icosphere.035_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "203": {
+            "link": {
+                "name": "Icosphere.034_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "204": {
+            "link": {
+                "name": "Icosphere.033_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "205": {
+            "link": {
+                "name": "Icosphere.032_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "206": {
+            "link": {
+                "name": "Icosphere.041_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "207": {
+            "link": {
+                "name": "Icosphere.036_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "208": {
+            "link": {
+                "name": "Icosphere.040_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "209": {
+            "link": {
+                "name": "Icosphere.039_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "210": {
+            "link": {
+                "name": "Icosphere.038_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "211": {
+            "link": {
+                "name": "Icosphere.037_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "212": {
+            "link": {
+                "name": "Icosphere.043_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "213": {
+            "link": {
+                "name": "Icosphere.044_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "214": {
+            "link": {
+                "name": "Icosphere.042_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "215": {
+            "link": {
+                "name": "Icosphere.045_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "216": {
+            "link": {
+                "name": "Cube.008_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "217": {
+            "link": {
+                "name": "Icosphere.047_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "218": {
+            "link": {
+                "name": "DirtPile_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "219": {
+            "link": {
+                "name": "Icosphere.049_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "Icosphere.050_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "221": {
+            "link": {
+                "name": "NurbsPath.008_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "222": {
+            "link": {
+                "name": "NurbsPath.009_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "223": {
+            "link": {
+                "name": "NurbsPath.010_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "224": {
+            "link": {
+                "name": "NurbsPath.011_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "NurbsPath.012_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "NurbsPath.013_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "NurbsPath.014_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "LanternLargeStem.001_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "229": {
+            "link": {
+                "name": "LanternLargeStem.001_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "230": {
+            "link": {
+                "name": "Rope_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "Cylinder.014_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "232": {
+            "link": {
+                "name": "Cube.059_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "233": {
+            "link": {
+                "name": "DirtPile.002_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "DirtPile.001_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "Icosphere.051_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "Icosphere.052_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "237": {
+            "link": {
+                "name": "Icosphere.053_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "238": {
+            "link": {
+                "name": "Icosphere.054_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "239": {
+            "link": {
+                "name": "Icosphere.055_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "240": {
+            "link": {
+                "name": "Flower_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "241": {
+            "link": {
+                "name": "Flower_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "242": {
+            "link": {
+                "name": "Flower_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "243": {
+            "link": {
+                "name": "Flower.001_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "244": {
+            "link": {
+                "name": "Flower.001_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "245": {
+            "link": {
+                "name": "Flower.001_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "246": {
+            "link": {
+                "name": "Flower.002_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "247": {
+            "link": {
+                "name": "Flower.002_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "248": {
+            "link": {
+                "name": "Flower.002_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "Flower.003_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "250": {
+            "link": {
+                "name": "Flower.003_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "251": {
+            "link": {
+                "name": "Flower.004_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "252": {
+            "link": {
+                "name": "Flower.004_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "253": {
+            "link": {
+                "name": "Flower.005_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "254": {
+            "link": {
+                "name": "Flower.005_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "255": {
+            "link": {
+                "name": "Flower.005_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "256": {
+            "link": {
+                "name": "Flower.006_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "Flower.006_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "258": {
+            "link": {
+                "name": "Flower.006_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "259": {
+            "link": {
+                "name": "Flower.007_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "260": {
+            "link": {
+                "name": "Flower.007_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "261": {
+            "link": {
+                "name": "Flower.007_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "262": {
+            "link": {
+                "name": "Flower.008_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "263": {
+            "link": {
+                "name": "Flower.008_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "264": {
+            "link": {
+                "name": "Flower.008_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "265": {
+            "link": {
+                "name": "Flower.009_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "Flower.009_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "267": {
+            "link": {
+                "name": "Cube.060_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "268": {
+            "link": {
+                "name": "Icosphere.046_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "269": {
+            "link": {
+                "name": "Flower.010_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "270": {
+            "link": {
+                "name": "Flower.010_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "271": {
+            "link": {
+                "name": "Cube.061_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "272": {
+            "link": {
+                "name": "Flower.011_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "273": {
+            "link": {
+                "name": "Flower.011_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "274": {
+            "link": {
+                "name": "Cube.062_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "275": {
+            "link": {
+                "name": "Flower.012_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "276": {
+            "link": {
+                "name": "Flower.012_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "277": {
+            "link": {
+                "name": "Flower.013_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "278": {
+            "link": {
+                "name": "Flower.013_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "279": {
+            "link": {
+                "name": "Flower.013_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "280": {
+            "link": {
+                "name": "Flower.014_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "281": {
+            "link": {
+                "name": "Flower.014_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "282": {
+            "link": {
+                "name": "Flower.014_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "283": {
+            "link": {
+                "name": "Flower.015_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "284": {
+            "link": {
+                "name": "Flower.015_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "285": {
+            "link": {
+                "name": "Flower.015_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "286": {
+            "link": {
+                "name": "Flower.016_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "287": {
+            "link": {
+                "name": "Flower.016_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "288": {
+            "link": {
+                "name": "Flower.016_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "289": {
+            "link": {
+                "name": "Flower.017_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "290": {
+            "link": {
+                "name": "Flower.017_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "291": {
+            "link": {
+                "name": "Flower.018_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "292": {
+            "link": {
+                "name": "Flower.018_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "293": {
+            "link": {
+                "name": "Flower.019_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "294": {
+            "link": {
+                "name": "Flower.019_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "295": {
+            "link": {
+                "name": "Flower.019_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "296": {
+            "link": {
+                "name": "Flower.020_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "297": {
+            "link": {
+                "name": "Flower.020_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "298": {
+            "link": {
+                "name": "Flower.020_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "299": {
+            "link": {
+                "name": "Flower.021_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "300": {
+            "link": {
+                "name": "Flower.021_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "301": {
+            "link": {
+                "name": "Flower.021_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "302": {
+            "link": {
+                "name": "Flower.022_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "303": {
+            "link": {
+                "name": "Flower.022_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "304": {
+            "link": {
+                "name": "Flower.022_2",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "305": {
+            "link": {
+                "name": "Flower.023_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "306": {
+            "link": {
+                "name": "Flower.023_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "307": {
+            "link": {
+                "name": "Cube.063_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "308": {
+            "link": {
+                "name": "Flower.024_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "309": {
+            "link": {
+                "name": "Flower.024_1",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "310": {
+            "link": {
+                "name": "Circle.002_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "311": {
+            "link": {
+                "name": "Circle.004_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "312": {
+            "link": {
+                "name": "Circle.005_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "313": {
+            "link": {
+                "name": "Circle.006_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "314": {
+            "link": {
+                "name": "Circle.007_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "315": {
+            "link": {
+                "name": "Circle.008_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "316": {
+            "link": {
+                "name": "Circle.009_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "317": {
+            "link": {
+                "name": "Circle.010_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "318": {
+            "link": {
+                "name": "Circle.011_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "319": {
+            "link": {
+                "name": "Cube.064_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "320": {
+            "link": {
+                "name": "Cube.065_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "321": {
+            "link": {
+                "name": "Cube.066_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "322": {
+            "link": {
+                "name": "Cube.067_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "55"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "60": {
+            "link": {
+                "name": "Root",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "Grass",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "Mushroom",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "WhiteLeaf",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "RedDot",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "Rock",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "Dirt",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "TreeBark",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "Rope",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "DarkTreeBark",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "LightWood",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "Leafes.001",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "Glass",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "Metal",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "LightMetal",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "Fire",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "76": {
+            "link": {
+                "name": "Leafes",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "77": {
+            "link": {
+                "name": "Ground",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "78": {
+            "link": {
+                "name": "Material",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "775": {
+            "name": "Sky",
+            "pipeline": "54",
+            "Sky": {
+                "texture": "774"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "forest3",
+            "version": [
+                0,
+                9,
+                5
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "rendering": {
+            "sky": {
+                "enabled": true,
+                "material": "775"
+            }
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        }
+    },
+    "textures": {
+        "59": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "774": {
+            "link": {
+                "name": "skybox.jpg",
+                "file": "models\\skybox.jpg"
+            }
+        }
+    },
+    "images": {
+        "58": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\low_poly_forest_campfire_updated\\scene.gltf"
+            }
+        },
+        "773": {
+            "link": {
+                "name": "skybox.jpg",
+                "file": "models\\skybox.jpg"
+            }
+        }
+    },
+    "fonts": {
+        "55": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/low_poly_forest_campfire_updated/scene.gltf",
+        "models/skybox.jpg"
+    ]
+}
